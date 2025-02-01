@@ -1,0 +1,657 @@
+#row-features-card {
+    background-color: #0C0F2C;
+}
+
+.features-cards {
+    background: none;
+    border: 0;
+}
+
+#row-features-card-2 {
+    background-color: #0C0F2C;
+    min-height: 401px;
+}
+
+.features-card-title {
+    color: #FFFFFF;
+    font-family: 'Manrope';
+}
+
+.features-card-text {
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    opacity: 0.70;
+    font-weight: 100;
+}
+
+.bs-icon.features-card-img {
+    width: 45px;
+    height: 45px;
+}
+
+.slider-wrapper {
+    animation: client-animate 30s normal linear infinite;
+    margin: 0;
+}
+
+.div-logo-container {
+    overflow: hidden;
+    padding: 0;
+    width: 90%;
+}
+
+.customers-head {
+    font-family: 'Manrope';
+    font-size: 24px;
+    color: #000000;
+}
+
+.clients-are-saying-head {
+    color: #1F1F1F;
+    font-family: 'Manrope';
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.tournament-solution-head {
+    font-family: 'Manrope';
+    font-weight: 400;
+    color: #1F1F1F;
+}
+
+.tournament-solutions-number1 {
+    font-size: 50px;
+    color: #C5EEFC;
+    font-family: 'Manrope';
+    font-weight: 400;
+}
+
+#zeetius-sports-arrows {
+    background-color: #91E0FA80;
+    border-radius: 50px;
+}
+
+#zeetius-sports-arrows1 {
+    border-radius: 50px;
+    background-color: #C5EEFC;
+}
+
+#read-more-arrow-zeetius-association {
+    background-color: #FFDA54;
+    border-radius: 50px;
+    color: black;
+}
+
+#zeetius-sport-academy {
+    border-radius: 50px;
+    color: white;
+    background-color: #000000;
+}
+
+#zeetius-sports-academy-2 {
+    border-radius: 50px;
+    background-color: #000000;
+    color: white;
+}
+
+#read-more-arrow-zeetius-academy {
+    background-color: #FFDA54;
+    color: black;
+    border-radius: 50px;
+}
+
+.left-right-line {
+    width: 59px;
+    height: 8px;
+    background-color: #10A6D6;
+}
+
+#icon-up {
+    display: none;
+    border-radius: 50px;
+    font-size: 26px;
+}
+
+.get-demo-button:hover {
+    background-color: #FAAC20;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+}
+
+    .get-demo-button:hover .icon-right {
+        display: none;
+    }
+
+    .get-demo-button:hover #icon-up {
+        display: inline;
+    }
+
+#section-faq {
+    background-color: #EDF6FF;
+}
+
+.faq-header {
+    font-family: 'Manrope';
+    font-size: 45px;
+}
+
+.faq-sub-head {
+    font-family: 'Manrope';
+    color: #000000;
+}
+
+.faq-item {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.questions {
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: #101828;
+}
+
+.faq-answers {
+    font-size: 16px;
+    font-family: 'Manrope';
+    color: #667085;
+}
+
+.solutions-individual-sub-heading {
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: #000000;
+}
+
+.get-free-demo-head {
+    color: #141414;
+    font-family: 'Manrope';
+    font-size: 56px;
+}
+
+.get-free-demo-row {
+    background-color: #F2F2F2;
+    width: 90%;
+    border-radius: 40px;
+}
+
+.icon.ion-android-done.tick-mark {
+    color: #047857;
+}
+
+#div-points {
+    gap: 30px;
+}
+
+.points-label {
+    font-family: 'Manrope';
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+.book-free-demo-btnn {
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    color: #0C0F2C;
+}
+
+#get-demo-icon {
+    width: 29px;
+    height: 22px;
+}
+
+.get-free-demo-btnn {
+    font-weight: 600;
+    font-family: 'Manrope';
+    font-size: 20px;
+}
+
+#div-solutions-hover-modal {
+    width: 90%;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.solution-hover-headings {
+    font-family: 'IBM Plex Mono';
+    font-size: 12px;
+    color: #41423F;
+    font-weight: 500;
+}
+
+.solutions-hover-items {
+    font-size: 14px;
+    font-family: 'Manrope';
+    color: #51564E;
+    font-weight: 400;
+}
+
+#section-solutions-hover {
+    display: none;
+}
+
+#zeetiuslive_individual {
+    width: 90%;
+}
+
+.go_to_zeetius_live {
+    color: black;
+    font-family: 'Manrope';
+    font-size: 19px;
+    text-decoration-color: grey;
+}
+
+.head-sports-we-offer {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Manrope';
+}
+
+.sub-head-sports-we-offers {
+    font-family: 'Manrope';
+    font-size: 39px;
+}
+
+.sports-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#sports-we-offers-section {
+    background-color: #F1F7FF;
+    width: 100%;
+}
+
+.sports-we-offers-bottom-head {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Manrope';
+}
+
+/* ************************Sports We Offers Hover EFfect********************************** */
+
+.sports-btn {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-family: 'Manrope';
+    color: #000000;
+}
+
+    .sports-btn::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-radius: 30px;
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .sports-btn:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .sports-btn:hover {
+        border: 1px solid black;
+    }
+
+.sports-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.stay-in-loop-btn {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 21px;
+    background-color: white;
+    position: relative;
+}
+
+/* *************************************************************************************** */
+
+.profile-card {
+    max-width: 580px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 21px;
+}
+
+.flag-icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 30px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.testimonial-head {
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.testimonial-sub-head {
+    font-family: 'Manrope';
+    font-size: 12px;
+    color: #626262;
+}
+
+.quote {
+    font-size: 15px;
+    font-family: 'Manrope';
+    color: #464646;
+}
+
+#sports-we-offers-section-mobile-view {
+    background-color: #F1F7FF;
+}
+
+#demoModalLabel {
+    font-family: 'Manrope';
+    color: #474A4F;
+}
+
+.client-head {
+    font-family: 'Manrope';
+    font-size: 25px;
+    font-weight: 700;
+    color: #202020;
+}
+
+.client-paragraph {
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: #202020;
+}
+
+.star {
+    color: #3E66DF;
+    font-size: 18px;
+}
+
+.head-insights {
+    font-family: 'Manrope';
+    font-size: 29px;
+}
+
+.livestreaming-head {
+    font-family: 'Manrope';
+    font-size: 18px;
+    color: #121416;
+    font-weight: 700;
+}
+
+.section-linked-in {
+    background-color: #EDF6FF;
+}
+
+.head-linkedin {
+    /*width: 90%;*/
+    margin: 0 auto;
+    font-family: 'Manrope';
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.linkedin-article {
+    font-family: 'Manrope';
+    font-size: 30px;
+}
+
+.insight-blog-head {
+    font-family: 'Manrope';
+    font-size: 33px;
+}
+
+.insight-blog-progres-bar {
+    width: 90%;
+    margin: 0 auto;
+    height: 5px;
+}
+
+.careers-big-text {
+    font-size: 64px;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+.livestreaming-main-head {
+    font-family: 'Manrope';
+    font-size: 24px;
+    color: #121416;
+    font-weight: 700;
+}
+
+.fa.fa-cloud-upload {
+    color: rgba(16,166,214,0.57);
+    font-size: 26px;
+}
+
+#text-join-the-team {
+    transform: translate(0%, 18%);
+    transition: transform .8s ease-out;
+    will-change: transform;
+    /*font-size: 2em;*/
+    white-space: nowrap;
+}
+
+#we-want-hear-from-you-section {
+    background-color: #EDF6FF;
+    position: relative;
+    margin-top: 14rem;
+}
+
+#we-want-hear-div {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-4rem);
+}
+
+.file-upload {
+    font-family: 'Manrope';
+    font-size: 20px;
+    color: #000000;
+}
+
+.file-size {
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: #827C7C;
+}
+
+.contact-title-mobile {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 23px;
+    font-family: 'Manrope';
+}
+
+.btn-right-arrow {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.contact-card-para {
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    color: #000000;
+}
+
+#head-contact-form-mobileview {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    color: #1F1F1F;
+}
+
+#contact-form-section-mobile-view {
+    background-color: #EDF6FF;
+    position: relative;
+    margin-top: 7rem;
+}
+
+.country-para {
+    text-align: left;
+    font-family: 'Manrope';
+    font-size: 10px;
+}
+
+.capability-slider {
+    background: #FFFFFF;
+}
+
+.capability-head {
+    background: #FFFFFF;
+}
+
+.slider-number {
+    text-align: right;
+}
+
+.head-who-we-are {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 40px;
+    color: #1F1F1F;
+}
+
+.our-journey-para {
+    font-family: 'Manrope';
+    font-size: 19px;
+    color: #4D4D4D;
+}
+
+.overlay-para-who-we-are {
+    background: white;
+}
+
+.word-loop-who-we-are {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-size: 50px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    color: #1F1F1F;
+    white-space: nowrap;
+    background-color: #0D0F2C;
+}
+
+.moving-text {
+    display: inline-flex;
+    animation: scrollLeft 40s linear infinite;
+    color: #FFFFFF;
+}
+
+.adivisor-name {
+    font-size: 28px;
+    font-family: 'Manrope';
+}
+
+.adivisor-desgntn {
+    font-family: 'Manrope';
+    font-size: 18px;
+}
+
+.hover-content {
+    text-align: left;
+    font-family: 'Manrope';
+}
+
+.animation-text {
+}
+
+.media-btn {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#section-head-privacy-policy {
+    margin: 0 auto;
+    width: 90%;
+    background: #EDF6FF;
+    border-radius: 12px;
+}
+
+.privacy-para {
+    font-family: 'Manrope';
+    font-size: 18px;
+    line-height: 2.5;
+    color: #464B50;
+}
+
+#section-privacy-policy-paragraph {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.last-updated-txt {
+    font-family: 'Manrope';
+    font-size: 20px;
+}
+
+.head-terms-and-conditions {
+    font-size: 24px;
+    font-family: 'Manrope';
+    color: #262626;
+}
+
+.experience-txt {
+    font-family: 'Manrope';
+    font-size: 20px;
+}
+
+.experience-para {
+    font-size: 8px;
+    color: #777777;
+}
+
+#section-technical-support-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#section-technical-support-form-mobile-view {
+    width: 90%;
+    margin: 0 auto;
+}
