@@ -213,7 +213,7 @@
                 .main-slider {
                     position: relative;
                     width: 100%;
-                    height: 100vh; /* Full screen height */
+                    height: 100vh;
                     overflow: hidden;
                 }
 
@@ -226,6 +226,8 @@
                     position: relative;
                     width: 100%;
                     height: 100%;
+                    display: flex;
+                    align-items: center;
                 }
 
                 /* Background Image */
@@ -247,7 +249,7 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+                    background: rgba(0, 0, 0, 0.5);
                 }
 
                 /* Slider Content */
@@ -255,12 +257,12 @@
                     position: relative;
                     z-index: 2;
                     color: white;
-                    width: 100%;  /* Ensure full width */
-                    text-align: left;  /* Center text properly */
-                    padding: 20px;  /* Add padding to avoid cut-off */
+                    width: 100%;
+                    text-align: left;
+                    padding: 20px;
                     max-width: 80%;
-                    margin: auto;
-                    word-wrap: break-word; /* Ensure text doesn't overflow */
+                    margin-left: 10%;
+                    word-wrap: break-word;
                 }
 
                 .main-slider__content h2 {
@@ -271,54 +273,47 @@
                 }
                 
 
-                /* Responsive Styles */
-                @media (min-width: 1201px) {  /* Laptop and larger screens */
-                    .main-slider .container {
-                        padding-top: 260px;
-                        padding-bottom: 260px;
-                    }
+                /* Remove top/bottom padding from container since we're using flex centering */
+                .main-slider .container {
+                    padding-top: 0;
+                    padding-bottom: 0;
                 }
 
+                /* Responsive Styles */
                 @media (max-width: 1200px) {
                     .main-slider {
-                        height: 90vh;
+                        height: 100vh;
                     }
 
                     .main-slider__content h2 {
                         font-size: 60px;
                     }
-
-                    .main-slider .container {
-                        padding-top: 180px;  /* Reduced padding for smaller screens */
-                        padding-bottom: 180px;
-                    }
                 }
 
                 @media (max-width: 1024px) {
                     .main-slider {
-                        height: 80vh; /* Adjust height */
+                        height: 100vh;
                     }
 
                     .main-slider__content h2 {
-                        font-size: 50px; /* Smaller font for mid-size screens */
+                        font-size: 50px;
                     }
 
                     .main-slider__content a.thm-btn {
                         padding: 12px 24px;
                         font-size: 16px;
                     }
-
-
                 }
 
                 @media (max-width: 768px) {
                     .main-slider {
-                        height: 75vh;
+                        height: 100vh;
                     }
 
                     .main-slider__content {
                         max-width: 90%;
-                        padding: 10px;
+                        padding: 15px;
+                        margin-left: 5%;
                     }
 
                     .main-slider__content h2 {
@@ -330,12 +325,15 @@
                         padding: 10px 20px;
                         font-size: 14px;
                     }
-
                 }
 
                 @media (max-width: 480px) {
                     .main-slider {
-                        height: 65vh;
+                        height: 100vh;
+                    }
+
+                    .main-slider__content {
+                        margin-left: 5%;
                     }
 
                     .main-slider__content h2 {
@@ -1031,7 +1029,7 @@
             <div class="video-content">
                 <div class="video-player">
                     <video class="position-absolute overlay-img-game" controls autoplay muted>
-                        <source src="assets/videos/Sar.mp4" type="video/mp4">
+                        <source src="assets/videos/Saudi-video-export.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
