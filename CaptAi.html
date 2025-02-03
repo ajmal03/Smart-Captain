@@ -7,15 +7,11 @@
     <title>Smart Captain</title>
     <!-- favicons Icons -->
        <link rel="icon"  href="assets/images/resources/fav-icon.png">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" /> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <!-- <meta name="description" content="Entox HTML Template For Car Business" /> -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
@@ -86,7 +82,7 @@
                         </a>
                         <ul class="main-menu__list">
                             <li>
-                                <a href="index.html#About">Who we are</a>
+                                <a href="Who-we-are.html">Who we are</a>
                                 
                             </li>
                             <li>
@@ -106,6 +102,7 @@
             <span class="icon-envelope"> <i class="fas fa-envelope"></i></span> <!-- Changed to email icon -->
         </div>
         <div class="main-menu-wrapper__right-contact-number">
+            
             <a href="mailto:contact@smartcaptain.ai">contact@smartcaptain.ai</a> <!-- Changed to email -->
         </div>
     </div>
@@ -131,6 +128,19 @@
 
         <section class="vision-section">
             <div class="container">
+                <!-- Video Container -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="video-wrapper">
+                            <video class="video-content" controls autoplay muted>
+                                <source src="assets/videos/Sar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Container -->
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="vision-content text-center">
@@ -325,6 +335,56 @@
                         background: #005540;
                     }
                 }
+
+                /* Add new video styles */
+                .video-wrapper {
+                    position: relative;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                    margin-bottom: 60px;
+                }
+
+                .video-content {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                }
+
+                /* Video Controls Styling */
+                video::-webkit-media-controls {
+                    background-color: rgba(0,0,0,0.5);
+                }
+
+                video::-webkit-media-controls-panel {
+                    padding: 10px;
+                }
+
+                /* Responsive video adjustments */
+                @media (max-width: 991px) {
+                    .video-wrapper {
+                        margin-bottom: 50px;
+                        border-radius: 15px;
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    .video-wrapper {
+                        margin-bottom: 40px;
+                        border-radius: 12px;
+                        margin: 0 15px 40px 15px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .video-wrapper {
+                        margin-bottom: 30px;
+                        border-radius: 10px;
+                        margin: 0 10px 30px 10px;
+                    }
+                }
             </style>
         </section>
 
@@ -341,7 +401,8 @@
                                 <div class="footer-widget__about-logo">
                                     <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
                                 </div>
-                                <p class="footer-widget__about-text">Our mission is to revolutionize sports by merging traditional management with AI technology.</p>
+                                <p class="footer-widget__about-text">Partner with us to build a legacy of champions who inspire future generations.
+                                </p>
                                 <div class="footer-widget__about-social-list">
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
@@ -364,8 +425,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                               <!--  <p class="footer-widget__contact-text">66 Broklyn Street New York United States of
-                                    America</p> -->
+                                <p class="footer-widget__contact-text">Saudi Arabia</p>
                                 <div class="footer-widget__contact-info">
                                     <p>
                                         <!-- <a href="tel:92-666-888-0000" class="footer-widget__contact-phone">92 666 888
@@ -379,10 +439,12 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__newsletter">
                                 <!-- <h3 class="footer-widget__title">Contact</h3> -->
-                                <form class="footer-widget__newsletter-form">
+                                <form  id="submit-form" class="footer-widget__newsletter-form" action="">
                                     <div class="footer-widget__newsletter-input-box">
-                                        <input type="text" placeholder="Name" name="Name">
-                                        <input type="email" placeholder="Email Address" name="email">
+                                        <input type="text" placeholder="Name" name="entry.1834000204">
+                                        <br>
+                                        <input type="email" placeholder="Email Address" name="entry.1391766395">
+                                        <input type="Text" placeholder="Message" name="entry.53684667">
                                         <button type="submit" class=" thm-btn cta-one__btn thm-btn--dark--light-hover"><i
                                                 class="fas fa-paper-plane"></i></button>
                                           
@@ -549,6 +611,159 @@
       <script src="capabilities-Simple-Slider.js"></script>
       <script src="capabilities-bootstrap.min.js"></script>
       
+
+      <style>
+        .stricky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.5s ease;
+        }
+    
+        .nav-up {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    
+        .nav-down {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+    
+    <script>
+        // Hide Header on scroll down, show on scroll up
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = document.querySelector('.stricky-header').offsetHeight;
+    
+        window.addEventListener('scroll', function(event) {
+            didScroll = true;
+        });
+    
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+    
+        function hasScrolled() {
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                document.querySelector('.stricky-header').classList.remove('nav-down');
+                document.querySelector('.stricky-header').classList.add('nav-up');
+            } else {
+                // Scroll Up
+                if(st + window.innerHeight < document.documentElement.scrollHeight) {
+                    document.querySelector('.stricky-header').classList.remove('nav-up');
+                    document.querySelector('.stricky-header').classList.add('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+    
+    <script>
+
+        $("#submit-form").submit((e) => {
+            e.preventDefault();
+            $.ajax({
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8WDhqnzuxTG2vU0dW9qrPy_rDYt1N3GhmB3K086_E2TVRUg/formResponse",
+                data: $("#submit-form").serialize(),
+                method: "POST",
+                success: function (response) {
+                    showSuccessMessage();
+                },
+                error: function (err) {
+                    showSuccessMessage();
+                },
+            });
+        });
+    
+        function showSuccessMessage() {
+            // Create and show the popup
+            const popup = document.createElement('div');
+            popup.className = 'success-popup';
+            popup.innerHTML = `
+                <div class="popup-content">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully.</p>
+                </div>
+            `;
+            document.body.appendChild(popup);
+    
+            // Add styles
+            const style = document.createElement('style');
+            style.textContent = `
+                .success-popup {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+                    z-index: 1000;
+                    animation: fadeIn 0.3s ease-out;
+                }
+    
+                .popup-content {
+                    text-align: center;
+                }
+    
+                .popup-content i {
+                    font-size: 50px;
+                    color: #006a4e;
+                    margin-bottom: 20px;
+                }
+    
+                .popup-content h3 {
+                    color: #1c1c1c;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+    
+                .popup-content p {
+                    color: #666;
+                    margin: 0;
+                    font-size: 16px;
+                }
+    
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+    
+            // Remove popup and reload page after 2 seconds
+            setTimeout(() => {
+                popup.remove();
+                style.remove();
+                window.location.reload();
+            }, 2000);
+        }
+    </script> 
 
 </body>
 
