@@ -7,11 +7,7 @@
     <title>Smart Captain</title>
     <!-- favicons Icons -->
     <link rel="icon"  href="assets/images/resources/fav-icon.png">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" /> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <!-- <meta name="description" content="Entox HTML Template For Car Business" /> -->
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -56,6 +52,7 @@
     <!-- SwiperJS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 
@@ -87,7 +84,7 @@
                         </a>
                         <ul class="main-menu__list">
                             <li>
-                                <a href="#About">Who we are</a>
+                                <a href="Who-we-are.html">Who we are</a>
                                 
                             </li>
                             <li >
@@ -160,10 +157,10 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="main-slider__content">
-                                        <p>welcome to Smart Captain</p>
+                                        <!-- <p>welcome to Smart Captain</p> -->
                                         <h2>Beyond Limits. <br> Beyond Technology.</h2>
 
-                                        <a href="contact.html" class="thm-btn"><span>Know More</span></a>
+                                        <a href="#About" class="thm-btn"><span>Know More</span></a>
                                         
                                     </div>
                                 </div>
@@ -188,8 +185,8 @@
                                     <div class="main-slider__content">
                                         <!-- <p>welcome to Moniz Web agency</p> -->
                                         <h2>The future of sports  
-                                        <br> isn't coming—it's Saudi made.</h2>
-                                        <a href="contact.html" class="thm-btn"><span>Know More</span></a>
+                                        <br> isn't coming - it's Saudi made.</h2>
+                                        <a href="#About" class="thm-btn"><span>Know More</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -200,17 +197,159 @@
                 <!-- If we need navigation buttons -->
                 <div class="slider-bottom-box clearfix">
 
-                    <div class="main-slider__nav">
+                    <!-- <div class="main-slider__nav">
                         <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
                                 class="icon-right-arrow icon-left-arrow"></i>
                         </div>
                         <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
                                 class="icon-right-arrow"></i>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="swiper-pagination" id="main-slider-pagination"></div>
                 </div>
             </div>
+            <style>
+               /* Default Fullscreen Styles */
+                .main-slider {
+                    position: relative;
+                    width: 100%;
+                    height: 100vh; /* Full screen height */
+                    overflow: hidden;
+                }
+
+                .swiper-container {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .swiper-slide {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                /* Background Image */
+                .image-layer {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                /* Dark Overlay */
+                .image-layer-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+                }
+
+                /* Slider Content */
+                .main-slider__content {
+                    position: relative;
+                    z-index: 2;
+                    color: white;
+                    width: 100%;  /* Ensure full width */
+                    text-align: left;  /* Center text properly */
+                    padding: 20px;  /* Add padding to avoid cut-off */
+                    max-width: 80%;
+                    margin: auto;
+                    word-wrap: break-word; /* Ensure text doesn't overflow */
+                }
+
+                .main-slider__content h2 {
+                    font-size: 80px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
+                
+
+                /* Responsive Styles */
+                @media (min-width: 1201px) {  /* Laptop and larger screens */
+                    .main-slider .container {
+                        padding-top: 260px;
+                        padding-bottom: 260px;
+                    }
+                }
+
+                @media (max-width: 1200px) {
+                    .main-slider {
+                        height: 90vh;
+                    }
+
+                    .main-slider__content h2 {
+                        font-size: 60px;
+                    }
+
+                    .main-slider .container {
+                        padding-top: 180px;  /* Reduced padding for smaller screens */
+                        padding-bottom: 180px;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    .main-slider {
+                        height: 80vh; /* Adjust height */
+                    }
+
+                    .main-slider__content h2 {
+                        font-size: 50px; /* Smaller font for mid-size screens */
+                    }
+
+                    .main-slider__content a.thm-btn {
+                        padding: 12px 24px;
+                        font-size: 16px;
+                    }
+
+
+                }
+
+                @media (max-width: 768px) {
+                    .main-slider {
+                        height: 75vh;
+                    }
+
+                    .main-slider__content {
+                        max-width: 90%;
+                        padding: 10px;
+                    }
+
+                    .main-slider__content h2 {
+                        font-size: 28px;
+                        line-height: 1.3;
+                    }
+
+                    .main-slider__content a.thm-btn {
+                        padding: 10px 20px;
+                        font-size: 14px;
+                    }
+
+                }
+
+                @media (max-width: 480px) {
+                    .main-slider {
+                        height: 65vh;
+                    }
+
+                    .main-slider__content h2 {
+                        font-size: 22px;
+                    }
+
+                    .main-slider__content a.thm-btn {
+                        padding: 8px 16px;
+                        font-size: 12px;
+                    }
+                }
+
+
+            </style>
         </section>
         <!--Banner One End-->
 
@@ -219,188 +358,121 @@
 
 
 
-        <section class="build-business" style="margin-top:50px" id="About">
+      
+        <section class="welcome-one" id="About">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="build-business__left">
-                            <div class="build-business__left-bg"></div>
-                            <div class="build-business__img wow fadeInLeft animated" data-wow-duration="1500ms">
-                                <img src="assets/images/resources/reasons-one-img-1.jpg" alt="" class="img-fluid mobile-img">
-                                <div class="build-business__img-shape-1"></div>
-                                <div class="build-business__img-shape-2"></div>
+                    <div class="col-xl-6">
+                        <div class="welcome-one__left wow fadeInLeft animated" data-wow-duration="1500ms">
+                            <div class="welcome-one__img-box">
+                                <div class="welcome-one__img">
+                                    <img src="assets/images/resources/who-we-are.png" alt="">
+                                    <div class="welcome-one__shape-1"></div>
+                                    <div class="welcome-one__shape-2"></div>
+                                </div>
+                                <div class="welcome-one__trusted">
+                                    <p>Trusted by</p>
+                                    <h2 class="odometer odometer-auto-theme" data-count="4890"></h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="build-business__right">
-                            <div class="section-title text-left mb-4">
-                                <!-- <span class="section-title__tagline">DISCOVER OUR STORY</span> -->
-                                <h2 class="section-title__title">Who we are</h2>
+                    <div class="col-xl-6">
+                        <div class="welcome-one__right">
+                            <div class="section-title">
+                                <h2 class="section-title__title">Behind the game</h2>
                             </div>
-                            <div class="build-business__content">
-                                <div class="intro-text mb-5">
-                                    <p class="build-business__right-text">
-                                        At <strong>Smart Sports Solutions,</strong> we are transforming the future of sports by combining <strong>data, science, and innovation</strong> to push the boundaries of human potential. Inspired by <strong>Saudi Vision 2030,</strong> we deliver cutting-edge solutions powered by <strong>AI, machine learning, and AR/VR,</strong> designed to unlock potential and elevate performance.
-                                    </p>
-                                </div>
-                                
-                                <div class="key-points mb-5">
-                                    <div class="key-point mb-4">
-                                        <p class="build-business__desc">
-                                            More than just building technology, we are about creating <strong>world-class champions</strong>—on the field, in the boardroom, and beyond.
-                                        </p>
-                                    </div>
-                                    <div class="key-point">
-                                        <p class="build-business__desc">
-                                            With over a decade of experience, rooted in Saudi Arabia, we have grown to impact sports innovation on a global scale. Today, we are a trusted partner for athletes, coaches, and organisations worldwide, helping them achieve excellence through <strong>next-generation tools and strategies.</strong>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="vision-section">
-                                    <div class="vision-header mb-3">
-                                        <h4 class="vision-title">
-                                            <i class="fas fa-lightbulb vision-icon"></i>
-                                            <span>Our Vision</span>
-                                        </h4>
-                                    </div>
-                                    <div class="vision-content">
-                                        <p class="build-business__desc">
-                                            To shape the future of sports through groundbreaking, cutting-edge solutions that make sports more accessible, inclusive, and transformative for athletes and fans worldwide. We envision a world where technology elevates every aspect of sports, driving unparalleled performance and global connection.
-                                        </p>
-                                    </div>
+                            <div class="welcome-one__content">
+                                <p class="welcome-one__right-text-1">At <strong>Smart Sports Solutions</strong>, we are transforming the future
+                                     of sports by combining <strong>data, science, and innovation</strong> to push the boundaries of human potential. 
+                                     Inspired by <strong>Saudi Vision 2030</strong>, we deliver cutting-edge solutions powered by <strong>AI, 
+                                        machine learning, and AR/VR</strong>, designed to unlock potential and elevate performance. More 
+                                    than just building technology, we are about creating <strong>world-class champions</strong>—on the field, 
+                                    in the boardroom, and beyond.</p>
+                            
+                                <div class="welcome-one__btn-box">
+                                    <a href="Who-we-are.html" class="thm-btn welcome-one__btn"><span>Know More</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <style>
-                .build-business {
-                    padding: 80px 0;
-                    background-color: #ffffff;
-                }
-
-                .section-title__tagline {
-                    font-size: 14px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    color: #006A4E;
-                    letter-spacing: 2px;
-                    margin-bottom: 15px;
-                    display: block;
-                }
-
-                .section-title__title {
-                    font-size: 36px;
-                    font-weight: 700;
-                    line-height: 1.2;
-                    margin-bottom: 30px;
-                    color: #1c1c1c;
-                }
-
-                .build-business__img {
-                    position: relative;
-                    border-radius: 15px;
-                    overflow: hidden;
-                    box-shadow: 0 15px 30px rgba(0,106,78,0.1);
-                }
-
-                .build-business__img img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 15px;
-                    transition: transform 0.5s ease;
-                }
-
-                .build-business__right-text {
-                    font-size: 16px;
-                    line-height: 1.8;
-                    color: #555555;
-                    margin-bottom: 25px;
-                }
-
-                .key-point {
-                    padding-left: 20px;
-                    border-left: 3px solid #006A4E;
-                    margin-bottom: 25px;
-                }
-
-                .vision-header {
-                    margin-top: 40px;
-                }
-
-                .vision-title {
-                    display: flex;
-                    align-items: center;
-                    font-size: 24px;
-                    font-weight: 600;
-                    color: #1c1c1c;
-                }
-
-                .vision-icon {
-                    color: #006A4E;
-                    font-size: 24px;
-                    margin-right: 15px;
-                }
-
-                .vision-content {
-                    padding: 20px;
-                    background-color: rgba(0,106,78,0.05);
-                    border-radius: 10px;
-                    border-left: 4px solid #006A4E;
-                }
-
-                .build-business__content strong {
-                    color: #006A4E;
-                }
-
-                /* Mobile Responsive Styles */
-                @media (max-width: 991px) {
-                    .build-business__img {
-                        max-width: 100%;
-                        height: 400px;
-                        margin-bottom: 40px;
-                    }
-                    
-                    .build-business__img img.mobile-img {
-                        height: 100%;
-                        object-fit: cover;
-                    }
-
-                    .section-title__title {
-                        font-size: 30px;
-                    }
-                }
-
-                @media (max-width: 767px) {
-                    .build-business__img {
-                        height: 300px;
-                    }
-
-                    .section-title__title {
-                        font-size: 26px;
-                    }
-
-                    .vision-title {
-                        font-size: 20px;
-                    }
-                }
-
-                @media (max-width: 480px) {
-                    .build-business__img {
-                        height: 250px;
-                    }
-
-                    .key-point {
-                        padding-left: 15px;
-                    }
-                }
-            </style>
         </section>
 
+        <style>
+            .welcome-one {
+                padding: 120px 0;
+            }
+
+            .welcome-one__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                padding-left: 30px;
+            }
+
+            .section-title {
+                margin-bottom: 30px;
+                text-align: left;
+            }
+
+            .section-title__title {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+
+            .welcome-one__content {
+                text-align: left;
+            }
+
+            .welcome-one__right-text-1,
+            .welcome-one__right-text-2 {
+                font-size: 16px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            .welcome-one__btn-box {
+                margin-top: 30px;
+                text-align: left;
+            }
+
+            .welcome-one__btn {
+                display: inline-block;
+                padding: 12px 40px;
+                background-color: var(--moniz-primary);
+                color: #ffffff;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                border-radius: 32px;
+            }
+
+            .welcome-one__btn:hover {
+                background-color: var(--moniz-black);
+                transform: translateY(-2px);
+            }
+
+            @media (max-width: 1199px) {
+                .welcome-one__right {
+                    padding-left: 0;
+                    margin-top: 50px;
+                }
+            }
+
+            @media (max-width: 991px) {
+                .welcome-one {
+                    padding: 80px 0;
+                }
+                
+                .section-title__title {
+                    font-size: 32px;
+                }
+            }
+        </style>
 
         <!--Welcome One End-->
 
@@ -598,6 +670,7 @@
 
         <!--We Change Start-->
         <section class="we-change">
+            <div class="we-change__circle"></div>  <!-- Added circle shape -->
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -610,7 +683,7 @@
                                 <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
                                     <div class="accrodion active">
                                         <div class="accrodion-title">
-                                            <h4>Rooted in the Kingdom</h4>
+                                            <h4><i class="fas fa-crown"></i> Rooted in the Kingdom</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
@@ -620,7 +693,7 @@
                                     </div>
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4>Aligned with Vision 2030</h4>
+                                            <h4><i class="fas fa-eye"></i> Aligned with Vision 2030</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
@@ -630,7 +703,7 @@
                                     </div>
                                     <div class="accrodion">
                                         <div class="accrodion-title">
-                                            <h4>More Than Solutions</h4>
+                                            <h4><i class="fas fa-cogs"></i> More Than Solutions</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
@@ -640,7 +713,7 @@
                                     </div>
                                     <div class="accrodion last-chiled">
                                         <div class="accrodion-title">
-                                            <h4>Always Within Reach</h4>
+                                            <h4><i class="fas fa-phone-alt"></i> Always Within Reach</h4>
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
@@ -655,23 +728,145 @@
                     <div class="col-xl-6">
                         <div class="we-change__right">
                             <div class="we-change__right-img">
-                                <img src="assets/images/resources/we-change-right-img-1.jpg" alt="">
-                               <!--  <div class="we-change__agency">
-                                    <div class="we-change__agency-icon">
-                                        <span class="icon-development"></span>
-                                    </div>
-                                    <div class="we-change__agency-text">
-                                        <h3>Our agency is one of the most <br> successful agency.</h3>
-                                    </div>
-                                </div> -->
+                                <img src="assets/images/resources/web-saudi.jpg" alt="">
+                                <div class="we-change__agency">
+									<div class="we-change__agency-icon">
+										<span class="icon-development"></span>
+									</div>
+									<div class="we-change__agency-text">
+										<h3>Accessible. Agile. Aligned.</h3>
+									</div>
+								</div>
+                             
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <style>
+                .we-change {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .we-change__circle {
+                    position: absolute;
+                    left: -200px;
+                    top: 70%;
+                    transform: translateY(-50%);
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50%;
+                    background: #006a4e;
+                    z-index: 0;
+                    animation: floatCircle 6s ease-in-out infinite;
+                }
+
+                .we-change__circle::before {
+                    content: '';
+                    position: absolute;
+                    left: 50px;
+                    top: -30px;
+                    width: calc(100% + 60px);
+                    height: calc(100% + 60px);
+                    border-radius: 50%;
+                    border: 1px dashed rgba(0, 106, 78, 0.2);
+                    animation: rotateCircle 20s linear infinite;
+                }
+
+                /* .we-change__circle::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    border: 1px dashed rgba(0, 106, 78, 0.2);
+                    animation: rotateCircleReverse 15s linear infinite;
+                } */
+
+                @keyframes floatCircle {
+                    0%, 100% {
+                        transform: translateY(-50%) translateX(0);
+                    }
+                    50% {
+                        transform: translateY(-50%) translateX(20px);
+                    }
+                }
+
+                @keyframes rotateCircle {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes rotateCircleReverse {
+                    from {
+                        transform: translate(-50%, -50%) rotate(0deg);
+                    }
+                    to {
+                        transform: translate(-50%, -50%) rotate(-360deg);
+                    }
+                }
+
+                /* Ensure content stays above the circle */
+                .we-change__left-faqs,
+                .we-change__right {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .accrodion-title h4 {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #1c1c1c;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    padding-right: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .accrodion-title h4 i {
+                    color: #006a4e;
+                    font-size: 22px;
+                    transition: all 0.3s ease;
+                }
+
+                .accrodion.active .accrodion-title h4 i {
+                    transform: scale(1.1);
+                }
+
+                .accrodion:hover .accrodion-title h4 i {
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 767px) {
+                    .accrodion-title h4 {
+                        font-size: 16px;
+                        gap: 10px;
+                    }
+
+                    .accrodion-title h4 i {
+                        font-size: 18px;
+                    }
+                }
+            </style>
         </section>
         <!--We Change End-->
 
+
+
+       
+        
 
         <!--Services One Start-->
         <section class="services-one">
@@ -835,14 +1030,9 @@
         <div class="video-wrapper">
             <div class="video-content">
                 <div class="video-player">
-                    <div class="video-thumbnail">
-                        <video class="background-video" autoplay muted loop playsinline>
-                            <source src="assets/videos/Sar.mp4" type="video/mp4">
-                            <!-- Add additional source formats if needed -->
-                            <!-- <source src="assets/videos/your-video.webm" type="video/webm"> -->
-                        </video>
-                        
-                    </div>
+                    <video class="position-absolute overlay-img-game" controls autoplay muted>
+                        <source src="assets/videos/Sar.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -850,14 +1040,19 @@
 
     <style>
         .video-section {
-            padding: 120px 0;
+            padding: 100px 0;
             background-color: #f7f7f7;
             position: relative;
             overflow: hidden;
         }
 
+        .container {
+            max-width: 80% !important;
+            margin: 0 auto;
+        }
+
         .video-wrapper {
-            max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
         }
 
@@ -868,170 +1063,85 @@
             text-align: center;
         }
 
-        .video-text {
-            max-width: 800px;
-            margin-bottom: 50px;
-        }
-
-        .video-tagline {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #006A4E;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .video-title {
-            font-size: 36px;
-            font-weight: 700;
-            color: #1c1c1c;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .video-description {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #666666;
-        }
-
         .video-player {
             width: 100%;
-            max-width: 900px;
-            position: relative;
-        }
-
-        .video-thumbnail {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            background-size: cover;
-            background-position: center;
+            height: 0;
+        }
+
+        .overlay-img-game {
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%);
             border-radius: 15px;
-            overflow: hidden;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            object-fit: cover;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .video-play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: #006A4E;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            font-size: 24px;
-            transition: all 0.3s ease;
-            z-index: 2;
+        /* Large screens */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1200px !important;
+            }
         }
 
-        .video-play-btn:hover {
-            background: #005540;
-            transform: translate(-50%, -50%) scale(1.1);
+        /* Desktop */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 85% !important;
+            }
         }
 
-        .video-play-btn i {
-            margin-left: 5px;
-        }
-
-        .video-thumbnail::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .video-thumbnail:hover::after {
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-        }
-
-        .video-play-btn {
-            z-index: 3; /* Increased z-index to appear above video */
-        }
-
-        .video-thumbnail::after {
-            z-index: 2; /* Overlay between video and play button */
-        }
-
+        /* Tablet */
         @media (max-width: 991px) {
             .video-section {
                 padding: 80px 0;
             }
-
-            .video-title {
-                font-size: 32px;
-            }
-
-            .video-play-btn {
-                width: 60px;
-                height: 60px;
-                font-size: 20px;
+            
+            .container {
+                max-width: 90% !important;
             }
         }
 
+        /* Mobile Large */
         @media (max-width: 767px) {
             .video-section {
                 padding: 60px 0;
             }
 
-            .video-title {
-                font-size: 28px;
+            .container {
+                max-width: 95% !important;
+            }
+        }
+
+        /* Mobile Small */
+        @media (max-width: 480px) {
+            .video-section {
+                padding: 40px 0;
             }
 
-            .video-text {
-                margin-bottom: 30px;
+            .container {
+                max-width: 100% !important;
+                padding: 0 15px;
             }
 
-            .video-play-btn {
-                width: 50px;
-                height: 50px;
-                font-size: 18px;
-            }
-
-            .background-video {
-                height: 100%;
-                width: 100%;
+            .overlay-img-game {
+                border-radius: 10px;
             }
         }
     </style>
 
     <script>
-        // Initialize Fancybox for video popup
-        $("[data-fancybox]").fancybox({
-            youtube: {
-                controls: 1,
-                showinfo: 0,
-                autoplay: 1
-            },
-            vimeo: {
-                color: '006A4E',
-                autoplay: true
-            }
-        });
-
-        // Ensure video autoplay works on mobile
         document.addEventListener('DOMContentLoaded', function() {
-            const video = document.querySelector('.background-video');
+            const video = document.querySelector('.overlay-img-game');
+            
+            // Enable inline playback
+            video.setAttribute('playsinline', '');
             
             // Play video when it's ready
             video.play().catch(function(error) {
@@ -1047,6 +1157,13 @@
                         console.log("Video autoplay failed:", error);
                     });
                 }
+            });
+
+            // Handle orientation change
+            window.addEventListener('orientationchange', function() {
+                setTimeout(function() {
+                    video.style.width = '100%';
+                }, 100);
             });
         });
     </script>
@@ -1235,10 +1352,27 @@
         }
 
         .portfolio-divider {
-            width: 40px;
+            width: 80px;
             height: 3px;
-            background-color: #006A4E;
-            margin-bottom: 20px;
+            background-color: #006a4ebc;
+            margin: 0 auto 20px auto; /* Center alignment */
+            display: block; /* Ensures proper margin behavior */
+            position: relative; 
+            border-radius: 10px;
+        }
+
+        /* Optional: Add animation on scroll */
+        .portfolio-divider.animate {
+            animation: expandDivider 0.8s ease-out forwards;
+        }
+
+        @keyframes expandDivider {
+            from {
+                width: 0;
+            }
+            to {
+                width: 40px;
+            }
         }
 
         .portfolio-description {
@@ -1552,7 +1686,8 @@
                                 <div class="footer-widget__about-logo">
                                     <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
                                 </div>
-                                <p class="footer-widget__about-text">Our mission is to revolutionize sports by merging traditional management with AI technology.</p>
+                                <p class="footer-widget__about-text">Partner with us to build a legacy of champions who inspire future generations.
+                                </p>
                                 <div class="footer-widget__about-social-list">
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
@@ -1575,8 +1710,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                               <!--  <p class="footer-widget__contact-text">66 Broklyn Street New York United States of
-                                    America</p> -->
+                                <p class="footer-widget__contact-text">Saudi Arabia</p>
                                 <div class="footer-widget__contact-info">
                                     <p>
                                         <!-- <a href="tel:92-666-888-0000" class="footer-widget__contact-phone">92 666 888
@@ -1590,10 +1724,12 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms" >
                             <div class="footer-widget__column footer-widget__newsletter">
                                 <!-- <h3 class="footer-widget__title">Contact</h3> -->
-                                <form class="footer-widget__newsletter-form">
+                                <form  id="submit-form" class="footer-widget__newsletter-form" action="">
                                     <div class="footer-widget__newsletter-input-box">
-                                        <input type="text" placeholder="Name" name="Name">
-                                        <input type="email" placeholder="Email Address" name="email">
+                                        <input type="text" placeholder="Name" name="entry.1834000204">
+                                        <br>
+                                        <input type="email" placeholder="Email Address" name="entry.1391766395">
+                                        <input type="Text" placeholder="Message" name="entry.53684667">
                                         <button type="submit" class=" thm-btn cta-one__btn thm-btn--dark--light-hover"><i
                                                 class="fas fa-paper-plane"></i></button>
                                           
@@ -1726,6 +1862,161 @@
         });
     });
 </script>
+
+<style>
+    .stricky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        transition: all 0.5s ease;
+    }
+
+    .nav-up {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .nav-down {
+        transform: translateY(0);
+        opacity: 1;
+    }
+</style>
+
+<script>
+    // Hide Header on scroll down, show on scroll up
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = document.querySelector('.stricky-header').offsetHeight;
+
+    window.addEventListener('scroll', function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        
+        // If they scrolled down and are past the navbar, add class .nav-up
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            document.querySelector('.stricky-header').classList.remove('nav-down');
+            document.querySelector('.stricky-header').classList.add('nav-up');
+        } else {
+            // Scroll Up
+            if(st + window.innerHeight < document.documentElement.scrollHeight) {
+                document.querySelector('.stricky-header').classList.remove('nav-up');
+                document.querySelector('.stricky-header').classList.add('nav-down');
+            }
+        }
+        
+        lastScrollTop = st;
+    }
+</script>
+
+
+
+<script>
+
+    $("#submit-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8WDhqnzuxTG2vU0dW9qrPy_rDYt1N3GhmB3K086_E2TVRUg/formResponse",
+            data: $("#submit-form").serialize(),
+            method: "POST",
+            success: function (response) {
+                showSuccessMessage();
+            },
+            error: function (err) {
+                showSuccessMessage();
+            },
+        });
+    });
+
+    function showSuccessMessage() {
+        // Create and show the popup
+        const popup = document.createElement('div');
+        popup.className = 'success-popup';
+        popup.innerHTML = `
+            <div class="popup-content">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully.</p>
+            </div>
+        `;
+        document.body.appendChild(popup);
+
+        // Add styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .success-popup {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+                z-index: 1000;
+                animation: fadeIn 0.3s ease-out;
+            }
+
+            .popup-content {
+                text-align: center;
+            }
+
+            .popup-content i {
+                font-size: 50px;
+                color: #006a4e;
+                margin-bottom: 20px;
+            }
+
+            .popup-content h3 {
+                color: #1c1c1c;
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+
+            .popup-content p {
+                color: #666;
+                margin: 0;
+                font-size: 16px;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translate(-50%, -40%);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Remove popup and reload page after 2 seconds
+        setTimeout(() => {
+            popup.remove();
+            style.remove();
+            window.location.reload();
+        }, 2000);
+    }
+</script> 
 
 
 
