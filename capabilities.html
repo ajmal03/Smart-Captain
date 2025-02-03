@@ -55,121 +55,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<style>
-/* Mobile responsive styles for capabilities section */
-@media (max-width: 768px) {
-    /* Tab container adjustments */
-    .cap-tab-container {
-        padding: 0 15px;
-    }
-
-    .nav-tabs.tab-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-tabs .nav-item {
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-tabs .nav-link {
-        text-align: center;
-        padding: 10px;
-        border: 1px solid #dee2e6;
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
-
-    /* Content adjustments */
-    .tab-content {
-        width: 100% !important;
-        margin-top: 20px !important;
-    }
-
-    .row.g-0.w-75 {
-        width: 100% !important;
-        margin: 0;
-    }
-
-    /* Card adjustments */
-    .d-flex.flex-column.align-items-start.p-4 {
-        padding: 15px !important;
-    }
-
-    .cap-img-container {
-        margin-bottom: 10px;
-    }
-
-    h5 {
-        font-size: 16px !important;
-        margin-bottom: 8px;
-    }
-
-    .cap-para {
-        font-size: 14px !important;
-        line-height: 1.4;
-    }
-
-    /* Section margin adjustment */
-    .section-margin {
-        margin: 30px 0;
-    }
-
-    /* Background and container adjustments */
-    .page-header {
-        padding: 40px 0;
-    }
-
-    .page-header__inner h2 {
-        font-size: 24px;
-    }
-}
-
-/* Additional styles for extra small devices */
-@media (max-width: 480px) {
-    .nav-tabs .nav-link {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .d-flex.flex-column.align-items-start.p-4 {
-        padding: 12px !important;
-    }
-
-    h5 {
-        font-size: 15px !important;
-    }
-
-    .cap-para {
-        font-size: 13px !important;
-    }
-
-    /* Adjust image container size */
-    .cap-img-container img {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-/* Fix for tab content visibility on mobile */
-.tab-pane {
-    opacity: 1 !important;
-    display: block !important;
-}
-
-/* Add smooth transitions */
-.nav-link, .tab-pane {
-    transition: all 0.3s ease;
-}
-
-/* Improve tab active state visibility */
-.nav-tabs .nav-link.active {
-    background-color: #006a4e;
-    color: white;
-    border-color: #006a4e;
-}
-</style>
 
 </head>
 
@@ -252,392 +137,865 @@
 
 
 <section id="our-capabilities-section" class="section-margin">
-        <!-- <h1 class="our-capabilities-heading text-center">OUR CAPABILITIES</h1> -->
-        
-        <div class="cap-tab-container d-none d-md-block mt-5">
-            <ul class="nav nav-tabs tab-container justify-content-between tour-underline-tab" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link tab-bar show active" role="tab" data-bs-toggle="tab" id="tab-player-mgmt" href="#tab-1" data-target="#playermanagement" aria-selected="true">Player &amp; Athlete&nbsp;<br>Management</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-2" data-target="#col-tour-mgmt,#col-tec" aria-selected="false" tabindex="-1">Tournament &amp;&nbsp;<br>Event Planning</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-3" data-target="#col-real-time,#col-live" aria-selected="false" tabindex="-1">Real-Time Engagement&nbsp;<br>&amp; Updates</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-4" data-target="#col-data,#col-rank-list" aria-selected="false" tabindex="-1">Data Analytics &amp;&nbsp;<br>Recognition</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-5" data-target="#col-data,#col-rank-list" aria-selected="false" tabindex="-1">Sports Administration&nbsp;<br>&amp; Operations</a></li>
-            </ul>
-            <div class="tab-content mt-5" style="width: 90%;margin: 0 auto;background-color: #FFFFFF;">
-                <div class="tab-pane active show" role="tabpanel" id="tab-1" aria-labelledby="tab-player-mgmt">
-                    <div id="player-management" class="d-flex flex-column justify-content-center align-items-center pt-4">
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Comprehensive Athlete Profiles.svg" width="40" height="38"></div>
-                                    <h5>Comprehensive&nbsp;<br>Athlete Profiles</h5>
-                                    <p class="cap-para">Centralised management of individual player profiles, including performance stats, health records, and personal data, for easy access and analysis</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Performance Monitoring.svg" width="40" height="38"></div>
-                                    <h5>Performance&nbsp;<br>Monitoring</h5>
-                                    <p class="cap-para">Utilises technology and analytics to track and measure key metrics such as speed, stamina, and skill execution during training and games.</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Injury Prevention and Recovery.svg" width="40" height="38"></div>
-                                    <h5>
-                                        Injury Prevention&nbsp;<br>and Recovery
-                                    </h5>
-                                    <p class="cap-para">AI-driven tools to monitor fatigue levels, detect injury risks, and design personalised recovery programs for optimal player health</p>
-                                </div>
+    <!-- <h1 class="our-capabilities-heading text-center">OUR CAPABILITIES</h1> -->
+    
+    <div class="cap-tab-container d-none d-md-block mt-5">
+        <ul class="nav nav-tabs tab-container justify-content-between tour-underline-tab" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link tab-bar show active" role="tab" data-bs-toggle="tab" id="tab-player-mgmt" href="#tab-1" data-target="#playermanagement" aria-selected="true">Player &amp; Athlete&nbsp;<br>Management</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-2" data-target="#col-tour-mgmt,#col-tec" aria-selected="false" tabindex="-1">Tournament &amp;&nbsp;<br>Event Planning</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-3" data-target="#col-real-time,#col-live" aria-selected="false" tabindex="-1">Real-Time Engagement&nbsp;<br>&amp; Updates</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-4" data-target="#col-data,#col-rank-list" aria-selected="false" tabindex="-1">Data Analytics &amp;&nbsp;<br>Recognition</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link tab-bar" role="tab" data-bs-toggle="tab" href="#tab-5" data-target="#col-data,#col-rank-list" aria-selected="false" tabindex="-1">Sports Administration&nbsp;<br>&amp; Operations</a></li>
+        </ul>
+        <div class="tab-content mt-5" style="width: 90%;margin: 0 auto;background-color: #FFFFFF;">
+            <div class="tab-pane active show" role="tabpanel" id="tab-1" aria-labelledby="tab-player-mgmt">
+                <div id="player-management" class="d-flex flex-column justify-content-center align-items-center pt-4">
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Comprehensive Athlete Profiles.svg" width="40" height="38"></div>
+                                <h5>Comprehensive&nbsp;<br>Athlete Profiles</h5>
+                                <p class="cap-para">Centralised management of individual player profiles, including performance stats, health records, and personal data, for easy access and analysis</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-tech-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Skill-Development-Insights.svg" width="40" height="38"></div>
-                                    <h5>Skill Development&nbsp;<br>Insights</h5>
-                                    <p class="cap-para">Provides data-backed recommendations and personalised training plans to enhance athlete performance and address areas of improvement</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-real-time-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Scouting and Recruitment.svg" width="40" height="38"></div>
-                                    <h5>Data-Driven Scouting&nbsp;<br>and Recruitment</h5>
-                                    <p class="cap-para">Uses analytics to identify potential talent, assess their fit for team dynamics, and make informed recruitment decisions</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-live-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Game Readiness Assessments.svg" width="40" height="38"></div>
-                                    <h5>Game Readiness&nbsp;<br>Assessments</h5>
-                                    <p class="cap-para">Evaluate athletes' physical and mental readiness for upcoming competitions using performance and recovery data</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Performance Monitoring.svg" width="40" height="38"></div>
+                                <h5>Performance&nbsp;<br>Monitoring</h5>
+                                <p class="cap-para">Utilises technology and analytics to track and measure key metrics such as speed, stamina, and skill execution during training and games.</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-data-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Goal Setting and Progress Tracking.svg" width="40" height="38"></div>
-                                    <h5>Goal Setting and&nbsp;<br>Progress Tracking</h5>
-                                    <p class="cap-para">Enables players and coaches to set specific performance goals and track progress using data-driven insights</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Injury Prevention and Recovery.svg" width="40" height="38"></div>
+                                <h5>
+                                    Injury Prevention&nbsp;<br>and Recovery
+                                </h5>
+                                <p class="cap-para">AI-driven tools to monitor fatigue levels, detect injury risks, and design personalised recovery programs for optimal player health</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-rank-list-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Virtual Coaching and Feedback.svg" width="40" height="38"></div>
-                                    <h5>Virtual Coaching and&nbsp;<br>Feedback</h5>
-                                    <p class="cap-para">Provides remote coaching tools with video analysis and performance feedback for athletes in different location</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-tech-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Skill-Development-Insights.svg" width="40" height="38"></div>
+                                <h5>Skill Development&nbsp;<br>Insights</h5>
+                                <p class="cap-para">Provides data-backed recommendations and personalised training plans to enhance athlete performance and address areas of improvement</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-revenue-1">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Team Communication and Collaboration.svg" width="40" height="38"></div>
-                                    <h5>Team Communication and Collaboration</h5>
-                                    <p class="cap-para">Enhances communication between players, coaches, and management through integrated platforms for sharing feedback, schedules, and updates</p>
-                                </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-real-time-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Scouting and Recruitment.svg" width="40" height="38"></div>
+                                <h5>Data-Driven Scouting&nbsp;<br>and Recruitment</h5>
+                                <p class="cap-para">Uses analytics to identify potential talent, assess their fit for team dynamics, and make informed recruitment decisions</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-live-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Game Readiness Assessments.svg" width="40" height="38"></div>
+                                <h5>Game Readiness&nbsp;<br>Assessments</h5>
+                                <p class="cap-para">Evaluate athletes' physical and mental readiness for upcoming competitions using performance and recovery data</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-data-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Goal Setting and Progress Tracking.svg" width="40" height="38"></div>
+                                <h5>Goal Setting and&nbsp;<br>Progress Tracking</h5>
+                                <p class="cap-para">Enables players and coaches to set specific performance goals and track progress using data-driven insights</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-rank-list-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Virtual Coaching and Feedback.svg" width="40" height="38"></div>
+                                <h5>Virtual Coaching and&nbsp;<br>Feedback</h5>
+                                <p class="cap-para">Provides remote coaching tools with video analysis and performance feedback for athletes in different location</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-revenue-1">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Team Communication and Collaboration.svg" width="40" height="38"></div>
+                                <h5>Team Communication and Collaboration</h5>
+                                <p class="cap-para">Enhances communication between players, coaches, and management through integrated platforms for sharing feedback, schedules, and updates</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-2">
-                    <div id="tournamenteventplanning" class="d-flex flex-column justify-content-center align-items-center pt-4">
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Planning.svg" width="40" height="38"></div>
-                                    <h5>Tournament&nbsp;<br>Planning</h5>
-                                    <p class="cap-para">Automates tournament planning with tools for scheduling, team coordination, and venue management</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Listing.svg" width="40" height="38"></div>
-                                    <h5>Tournament&nbsp;<br>Listing</h5>
-                                    <p class="cap-para">Creates custom landing pages for tournaments, providing detailed information and attracting participants with ease</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Draws & Scheduling.svg" width="40" height="38"></div>
-                                    <h5>Draws &amp;&nbsp;<br>Scheduling</h5>
-                                    <p class="cap-para">Streamlines tournaments by automating draw generation, match format customisation, and real-time schedule management</p>
-                                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div id="tournamenteventplanning" class="d-flex flex-column justify-content-center align-items-center pt-4">
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Planning.svg" width="40" height="38"></div>
+                                <h5>Tournament&nbsp;<br>Planning</h5>
+                                <p class="cap-para">Automates tournament planning with tools for scheduling, team coordination, and venue management</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-tech-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Court Management.svg" width="40" height="38"></div>
-                                    <h5>Court&nbsp;<br>Management</h5>
-                                    <p class="cap-para">Court Management optimises court allocation and scheduling, ensuring efficient utilisation of resources and smooth tournament operations</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-real-time-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Hospitality Management.svg" width="40" height="38"></div>
-                                    <h5>Hospitality&nbsp;<br>Management</h5>
-                                    <p class="cap-para">Manages hospitality services seamlessly, providing athletes and guests with a memorable and comfortable experience throughout the even</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-live-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Player Accreditation.svg" width="40" height="38"></div>
-                                    <h5>Player&nbsp;<br>Accreditation</h5>
-                                    <p class="cap-para">Simplify the accreditation process for players with streamlined system, ensuring quick and efficient validation and access control</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Listing.svg" width="40" height="38"></div>
+                                <h5>Tournament&nbsp;<br>Listing</h5>
+                                <p class="cap-para">Creates custom landing pages for tournaments, providing detailed information and attracting participants with ease</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-data-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Validation System.svg" width="40" height="38"></div>
-                                    <h5>Validation&nbsp;<br>System</h5>
-                                    <p class="cap-para">Provides QR-enabled gate system for queue management and coupon validation, ensuring smooth entry and efficient event flow</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Draws & Scheduling.svg" width="40" height="38"></div>
+                                <h5>Draws &amp;&nbsp;<br>Scheduling</h5>
+                                <p class="cap-para">Streamlines tournaments by automating draw generation, match format customisation, and real-time schedule management</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-rank-list-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Expense Tracker.svg" width="40" height="38"></div>
-                                    <h5>Expense Tracker</h5>
-                                    <p class="cap-para">Empowers players with an expense tracker tool, allowing them to manage their finances and expenses during the event period</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-tech-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Court Management.svg" width="40" height="38"></div>
+                                <h5>Court&nbsp;<br>Management</h5>
+                                <p class="cap-para">Court Management optimises court allocation and scheduling, ensuring efficient utilisation of resources and smooth tournament operations</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-revenue-2">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Marketing Tools.svg" width="40" height="38"></div>
-                                    <h5>Marketing Tools</h5>
-                                    <p class="cap-para">Promotes tournaments effectively with marketing tools, including email campaigns, social media integration, and more</p>
-                                </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-real-time-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Hospitality Management.svg" width="40" height="38"></div>
+                                <h5>Hospitality&nbsp;<br>Management</h5>
+                                <p class="cap-para">Manages hospitality services seamlessly, providing athletes and guests with a memorable and comfortable experience throughout the even</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-live-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Player Accreditation.svg" width="40" height="38"></div>
+                                <h5>Player&nbsp;<br>Accreditation</h5>
+                                <p class="cap-para">Simplify the accreditation process for players with streamlined system, ensuring quick and efficient validation and access control</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-data-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Validation System.svg" width="40" height="38"></div>
+                                <h5>Validation&nbsp;<br>System</h5>
+                                <p class="cap-para">Provides QR-enabled gate system for queue management and coupon validation, ensuring smooth entry and efficient event flow</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-rank-list-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Expense Tracker.svg" width="40" height="38"></div>
+                                <h5>Expense Tracker</h5>
+                                <p class="cap-para">Empowers players with an expense tracker tool, allowing them to manage their finances and expenses during the event period</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-revenue-2">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Marketing Tools.svg" width="40" height="38"></div>
+                                <h5>Marketing Tools</h5>
+                                <p class="cap-para">Promotes tournaments effectively with marketing tools, including email campaigns, social media integration, and more</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-3">
-                    <div id="realtimeupdates" class="d-flex flex-column justify-content-center align-items-center pt-4">
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Time, Scores and Results.svg" width="40" height="38"></div>
-                                    <h5>Time, Scores and&nbsp;<br>Results</h5>
-                                    <p class="cap-para">TSR streamlines match management, providing real-time updates on match duration, scores, and final outcomes for efficient tournament operations</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Multiple Court Streaming.svg" width="40" height="38"></div>
-                                    <h5>Multiple Court&nbsp;<br>Streaming</h5>
-                                    <p class="cap-para">Streams multiple matches simultaneously giving viewers access to a diverse range of sporting events in real-time</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integrated Scorecards & GFX.svg" width="40" height="38"></div>
-                                    <h5>Integrated&nbsp;<br>Scorecards &amp; GFX</h5>
-                                    <p class="cap-para">Get comprehensive insights into each game with integrated scorecards and GFX, providing real-time updates and enhancing the visual appeal of the broadcast</p>
-                                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-3">
+                <div id="realtimeupdates" class="d-flex flex-column justify-content-center align-items-center pt-4">
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Time, Scores and Results.svg" width="40" height="38"></div>
+                                <h5>Time, Scores and&nbsp;<br>Results</h5>
+                                <p class="cap-para">TSR streamlines match management, providing real-time updates on match duration, scores, and final outcomes for efficient tournament operations</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-tech-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Immersive Viewing Experience.svg" width="40" height="38"></div>
-                                    <h5>Immersive Viewing&nbsp;<br>Experience</h5>
-                                    <p class="cap-para">Dive into the heart of the game with immersive visuals and dynamic graphics, providing an unparalleled viewing experience for sports enthusiasts</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-real-time-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Interactive Engagements.svg" width="40" height="38"></div>
-                                    <h5>Interactive&nbsp;<br>Engagements</h5>
-                                    <p class="cap-para">Allows interactive engagements with interactive features, making every match a shared experience</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-live-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advertisement Possibilities.svg" width="40" height="38"></div>
-                                    <h5>Advertisement&nbsp;<br>Possibilities</h5>
-                                    <p class="cap-para">Provides new revenue opportunities with customisable advertising solutions tailored for sponsors and partners</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Multiple Court Streaming.svg" width="40" height="38"></div>
+                                <h5>Multiple Court&nbsp;<br>Streaming</h5>
+                                <p class="cap-para">Streams multiple matches simultaneously giving viewers access to a diverse range of sporting events in real-time</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-data-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Forum.svg" width="40" height="38"></div>
-                                    <h5>Sports Forum</h5>
-                                    <p class="cap-para">A network for sports professionals, coaches, enthusiasts and experts to engage, exchange knowledge, and foster a connected community to shape the future of sports</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integrated Scorecards & GFX.svg" width="40" height="38"></div>
+                                <h5>Integrated&nbsp;<br>Scorecards &amp; GFX</h5>
+                                <p class="cap-para">Get comprehensive insights into each game with integrated scorecards and GFX, providing real-time updates and enhancing the visual appeal of the broadcast</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-rank-list-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Highlights & Shorts.svg" width="40" height="38"></div>
-                                    <h5>Highlights &amp;&nbsp;<br>Shorts</h5>
-                                    <p class="cap-para">Relives the best moments of every game with on-demand highlights and shorts, allowing viewers to catch up on key moments or revisit their favourite plays at any time</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-tech-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Immersive Viewing Experience.svg" width="40" height="38"></div>
+                                <h5>Immersive Viewing&nbsp;<br>Experience</h5>
+                                <p class="cap-para">Dive into the heart of the game with immersive visuals and dynamic graphics, providing an unparalleled viewing experience for sports enthusiasts</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-revenue-3">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Audience Reach.svg" width="40" height="38"></div>
-                                    <h5>Audience Reach</h5>
-                                    <p class="cap-para">Helps to reach a growing audience of sports enthusiasts, ensuring maximum exposure and participation</p>
-                                </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-real-time-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Interactive Engagements.svg" width="40" height="38"></div>
+                                <h5>Interactive&nbsp;<br>Engagements</h5>
+                                <p class="cap-para">Allows interactive engagements with interactive features, making every match a shared experience</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-live-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advertisement Possibilities.svg" width="40" height="38"></div>
+                                <h5>Advertisement&nbsp;<br>Possibilities</h5>
+                                <p class="cap-para">Provides new revenue opportunities with customisable advertising solutions tailored for sponsors and partners</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-data-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Forum.svg" width="40" height="38"></div>
+                                <h5>Sports Forum</h5>
+                                <p class="cap-para">A network for sports professionals, coaches, enthusiasts and experts to engage, exchange knowledge, and foster a connected community to shape the future of sports</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-rank-list-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Highlights & Shorts.svg" width="40" height="38"></div>
+                                <h5>Highlights &amp;&nbsp;<br>Shorts</h5>
+                                <p class="cap-para">Relives the best moments of every game with on-demand highlights and shorts, allowing viewers to catch up on key moments or revisit their favourite plays at any time</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-revenue-3">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Audience Reach.svg" width="40" height="38"></div>
+                                <h5>Audience Reach</h5>
+                                <p class="cap-para">Helps to reach a growing audience of sports enthusiasts, ensuring maximum exposure and participation</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-4">
-                    <div id="dataanalytics" class="d-flex flex-column justify-content-center align-items-center pt-4">
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Real-Time Performance Tracking.svg" width="40" height="38"></div>
-                                    <h5>Real-Time&nbsp;<br>Performance Tracking</h5>
-                                    <p class="cap-para">Provides instant insights into athletes' performance metrics during training and competitions using wearable devices and IoT integration</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advanced Data Visualisation.svg" width="40" height="38"></div>
-                                    <h5>Advanced Data&nbsp;<br>Visualisation</h5>
-                                    <p class="cap-para">Provides intuitive dashboards and interactive tools to present complex data in easily understandable formats for coaches, players, and analysts</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Predictive Analytics.svg" width="40" height="38"></div>
-                                    <h5>
-                                        Predictive&nbsp;<br>Analytics
-                                    </h5>
-                                    <p class="cap-para">Leverages AI and machine learning algorithms to forecast athlete performance trends, injury risks, and game outcomes based on historical and real-time data</p>
-                                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-4">
+                <div id="dataanalytics" class="d-flex flex-column justify-content-center align-items-center pt-4">
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Real-Time Performance Tracking.svg" width="40" height="38"></div>
+                                <h5>Real-Time&nbsp;<br>Performance Tracking</h5>
+                                <p class="cap-para">Provides instant insights into athletes' performance metrics during training and competitions using wearable devices and IoT integration</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-tech-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Customised Reporting Solutions.svg" width="40" height="38"></div>
-                                    <h5>Customised&nbsp;<br>Reporting Solutions</h5>
-                                    <p class="cap-para">Provides tailored reports catering to the unique needs of different stakeholders, including athletes, coaches, teams, and league management</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-real-time-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integration with Video Analysis.svg" width="40" height="38"></div>
-                                    <h5>Integration with&nbsp;<br>Video Analysis</h5>
-                                    <p class="cap-para">Synchronises analytics with video footage to provide comprehensive insights on tactics, movement patterns, and game strategies</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-live-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Decision Making.svg" width="40" height="38"></div>
-                                    <h5>Data-Driven&nbsp;<br>Decision Making</h5>
-                                    <p class="cap-para">Empowers teams and organisations to make informed decisions by identifying key performance indicators (KPIs) and trends from raw data</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advanced Data Visualisation.svg" width="40" height="38"></div>
+                                <h5>Advanced Data&nbsp;<br>Visualisation</h5>
+                                <p class="cap-para">Provides intuitive dashboards and interactive tools to present complex data in easily understandable formats for coaches, players, and analysts</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-data-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Enhanced Fan Engagement.svg" width="40" height="38"></div>
-                                    <h5>Enhanced Fan&nbsp;<br>Engagement</h5>
-                                    <p class="cap-para">Utilises analytics to generate insights and interactive experiences for fans, such as player stats, and personalised content</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Predictive Analytics.svg" width="40" height="38"></div>
+                                <h5>
+                                    Predictive&nbsp;<br>Analytics
+                                </h5>
+                                <p class="cap-para">Leverages AI and machine learning algorithms to forecast athlete performance trends, injury risks, and game outcomes based on historical and real-time data</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-rank-list-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Scalability and Cloud-Based Solutions.svg" width="40" height="38"></div>
-                                    <h5>Scalability and Cloud-<br>Based Solutions</h5>
-                                    <p class="cap-para">Offers scalable, cloud-based platforms for storing and processing large datasets, ensuring accessibility and reliability for global teams</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-tech-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Customised Reporting Solutions.svg" width="40" height="38"></div>
+                                <h5>Customised&nbsp;<br>Reporting Solutions</h5>
+                                <p class="cap-para">Provides tailored reports catering to the unique needs of different stakeholders, including athletes, coaches, teams, and league management</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-revenue-4">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Compliance and Data Security.svg" width="40" height="38"></div>
-                                    <h5>Compliance and Data&nbsp;<br>Security</h5>
-                                    <p class="cap-para">Ensures all data analytics systems comply with industry regulations and prioritise the security of sensitive information</p>
-                                </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-real-time-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integration with Video Analysis.svg" width="40" height="38"></div>
+                                <h5>Integration with&nbsp;<br>Video Analysis</h5>
+                                <p class="cap-para">Synchronises analytics with video footage to provide comprehensive insights on tactics, movement patterns, and game strategies</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-live-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Decision Making.svg" width="40" height="38"></div>
+                                <h5>Data-Driven&nbsp;<br>Decision Making</h5>
+                                <p class="cap-para">Empowers teams and organisations to make informed decisions by identifying key performance indicators (KPIs) and trends from raw data</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-data-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Enhanced Fan Engagement.svg" width="40" height="38"></div>
+                                <h5>Enhanced Fan&nbsp;<br>Engagement</h5>
+                                <p class="cap-para">Utilises analytics to generate insights and interactive experiences for fans, such as player stats, and personalised content</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-rank-list-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Scalability and Cloud-Based Solutions.svg" width="40" height="38"></div>
+                                <h5>Scalability and Cloud-<br>Based Solutions</h5>
+                                <p class="cap-para">Offers scalable, cloud-based platforms for storing and processing large datasets, ensuring accessibility and reliability for global teams</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-revenue-4">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Compliance and Data Security.svg" width="40" height="38"></div>
+                                <h5>Compliance and Data&nbsp;<br>Security</h5>
+                                <p class="cap-para">Ensures all data analytics systems comply with industry regulations and prioritise the security of sensitive information</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-5">
-                    <div id="revenueoptimization" class="d-flex flex-column justify-content-center align-items-center pt-4">
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Membership Management.svg" width="40" height="38"></div>
-                                    <h5>Player/Membership&nbsp;<br>Management</h5>
-                                    <p class="cap-para">Efficiently manages player and membership data with a centralised platform for registrations, renewals, and performance tracking</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/RR and Technical Officials Management.svg" width="40" height="38"></div>
-                                    <h5>RR and Technical&nbsp;<br>Officials Management</h5>
-                                    <p class="cap-para">Streamlines umpire and technical officials' management with advanced scheduling, performance tracking, and communication tools</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Match Scheduling.svg" width="40" height="38"></div>
-                                    <h5>Match Scheduling</h5>
-                                    <p class="cap-para">Optimises match scheduling with smart, automated tools that consider team availability, venues, and league requirements</p>
-                                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-5">
+                <div id="revenueoptimization" class="d-flex flex-column justify-content-center align-items-center pt-4">
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-player-mgmt-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Membership Management.svg" width="40" height="38"></div>
+                                <h5>Player/Membership&nbsp;<br>Management</h5>
+                                <p class="cap-para">Efficiently manages player and membership data with a centralised platform for registrations, renewals, and performance tracking</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-tech-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Rank List Preparation.svg" width="40" height="38"></div>
-                                    <h5>Rank List&nbsp;<br>Preparation</h5>
-                                    <p class="cap-para">Automates rank list preparation with accurate, real-time data analysis and performance metrics. Delivers transparent and reliable rankings for players, teams, and leagues effortlessly</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-real-time-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Certificate Generation.svg" width="40" height="38"></div>
-                                    <h5>Certificate&nbsp;<br>Generation</h5>
-                                    <p class="cap-para">Generates professional, error-free certificates for participants, coaches, and officials instantly with automated processing</p>
-                                </div>
-                            </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-live-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Payment Management.svg" width="40" height="38"></div>
-                                    <h5>Payment&nbsp;<br>Management</h5>
-                                    <p class="cap-para">Manages tournament payments with the integrated payment system, ensuring<br>secure transactions and hassle-free financial management</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-athlete-mgmt-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/RR and Technical Officials Management.svg" width="40" height="38"></div>
+                                <h5>RR and Technical&nbsp;<br>Officials Management</h5>
+                                <p class="cap-para">Streamlines umpire and technical officials' management with advanced scheduling, performance tracking, and communication tools</p>
                             </div>
                         </div>
-                        <div class="row g-0 w-75">
-                            <div class="col col-md-4 col-12 mb-3" id="col-data-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Directory.svg" width="40" height="38"></div>
-                                    <h5>Sports Directory</h5>
-                                    <p class="cap-para">A comprehensive directory to help players, coaches, trainers, retailers and sports organisations, connect, find opportunities, and grow</p>
-                                </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-tour-mgmt-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Match Scheduling.svg" width="40" height="38"></div>
+                                <h5>Match Scheduling</h5>
+                                <p class="cap-para">Optimises match scheduling with smart, automated tools that consider team availability, venues, and league requirements</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-rank-list-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Employee Payroll Management.svg" width="40" height="38"></div>
-                                    <h5>Employee Payroll&nbsp;<br>Management</h5>
-                                    <p class="cap-para">Automates employee payroll management with precise calculations and timely disbursements</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-tech-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Rank List Preparation.svg" width="40" height="38"></div>
+                                <h5>Rank List&nbsp;<br>Preparation</h5>
+                                <p class="cap-para">Automates rank list preparation with accurate, real-time data analysis and performance metrics. Delivers transparent and reliable rankings for players, teams, and leagues effortlessly</p>
                             </div>
-                            <div class="col col-md-4 col-12 mb-3" id="col-revenue-5">
-                                <div class="d-flex flex-column align-items-start p-4">
-                                    <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Auto Email, SMS Integrations & Online Payments.svg" width="40" height="38"></div>
-                                    <h5>Auto Email, SMS Integrations&nbsp;<br>&amp; Online Payments</h5>
-                                    <p class="cap-para">Streamlines communication with auto email and SMS integrations, and simplifies payments with secure online solutions</p>
-                                </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-real-time-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Certificate Generation.svg" width="40" height="38"></div>
+                                <h5>Certificate&nbsp;<br>Generation</h5>
+                                <p class="cap-para">Generates professional, error-free certificates for participants, coaches, and officials instantly with automated processing</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-live-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Payment Management.svg" width="40" height="38"></div>
+                                <h5>Payment&nbsp;<br>Management</h5>
+                                <p class="cap-para">Manages tournament payments with the integrated payment system, ensuring<br>secure transactions and hassle-free financial management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 w-75">
+                        <div class="col col-md-4 col-12 mb-3" id="col-data-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Directory.svg" width="40" height="38"></div>
+                                <h5>Sports Directory</h5>
+                                <p class="cap-para">A comprehensive directory to help players, coaches, trainers, retailers and sports organisations, connect, find opportunities, and grow</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-rank-list-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Employee Payroll Management.svg" width="40" height="38"></div>
+                                <h5>Employee Payroll&nbsp;<br>Management</h5>
+                                <p class="cap-para">Automates employee payroll management with precise calculations and timely disbursements</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-12 mb-3" id="col-revenue-5">
+                            <div class="d-flex flex-column align-items-start p-4">
+                                <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Auto Email, SMS Integrations & Online Payments.svg" width="40" height="38"></div>
+                                <h5>Auto Email, SMS Integrations&nbsp;<br>&amp; Online Payments</h5>
+                                <p class="cap-para">Streamlines communication with auto email and SMS integrations, and simplifies payments with secure online solutions</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </section>
+    </div>
 
-   
-        
+    <div id="mob-view" class="d-block d-md-none py-5">
+        <div class="accordion" role="tablist" id="accordion-1" style="width: 90%;margin: 0 auto;">
+            <div class="accordion-item capability-item" id="player" style="background: none;border: none;">
+                <h2 class="accordion-header capability-head" role="tab">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">
+                        Player Management<span style="position: absolute;right: 1rem;height: 30px !important;width: 30px !important;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down collapse-icon faq-collapse capabilities-expand" style="color: #1F1F1F;width: 25px !important;height: 17px !important;font-size: 5px;">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg> -->
+                        </span>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <div class="carousel slide" data-bs-ride="false" id="carousel-our-capabilities">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">1/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Comprehensive Athlete Profiles.svg" width="40"></div>
+                                        <h5>Comprehensive Athlete Profiles</h5>
+                                        <p class="cap-para">Centralised management of individual player profiles, including performance stats, health records, and personal data, for easy access and analysis</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">2/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Performance Monitoring.svg" width="40"></div>
+                                        <h5>Performance Monitoring</h5>
+                                        <p class="cap-para">Utilises technology and analytics to track and measure key metrics such as speed, stamina, and skill execution during training and games.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">3/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Injury Prevention and Recovery.svg" width="40"></div>
+                                        <h5>Injury Prevention and Profiles</h5>
+                                        <p class="cap-para">AI-driven tools to monitor fatigue levels, detect injury risks, and design personalised recovery programs for optimal player health</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">4/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Skill-Development-Insights.svg" width="40"></div>
+                                        <h5>Skill Development Insights</h5>
+                                        <p class="cap-para">Provides data-backed recommendations and personalised training plans to enhance athlete performance and address areas of improvement</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">5/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Scouting and Recruitment.svg" width="40"></div>
+                                        <h5>Data-Driven Scouting and Recruitment</h5>
+                                        <p class="cap-para">Uses analytics to identify potential talent, assess their fit for team dynamics, and make informed recruitment decisions</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">6/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Game Readiness Assessments.svg" width="40"></div>
+                                        <h5>Game Readiness Assessments</h5>
+                                        <p class="cap-para">Evaluate athletes’ physical and mental readiness for upcoming competitions using performance and recovery data</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">7/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Goal Setting and Progress Tracking.svg" width="40"></div>
+                                        <h5>Goal Setting and Progress Tracking</h5>
+                                        <p class="cap-para">Enables players and coaches to set specific performance goals and track progress using data-driven insights</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">8/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Virtual Coaching and Feedback.svg" width="40"></div>
+                                        <h5>Virtual Coaching and Feedback</h5>
+                                        <p class="cap-para">Provides remote coaching tools with video analysis and performance feedback for athletes in different location</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">9/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Team Communication and Collaboration.svg" width="40"></div>
+                                        <h5>Team Communication and Collaboration</h5>
+                                        <p class="cap-para">Enhances communication between players, coaches, and management through integrated platforms for sharing feedback, schedules, and updates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-our-capabilities" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-our-capabilities" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="5"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="6"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="7"></button> <button type="button" data-bs-target="#carousel-our-capabilities" data-bs-slide-to="8"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3" id="tour" style="background: none;border: none;">
+                <h2 class="accordion-header capability-head" role="tab">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">
+                        Tournament Planning
+                        <span style="position: absolute;right: 1rem;height: 30px !important;width: 30px !important;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down collapse-icon faq-collapse capabilities-expand" style="color: #1F1F1F;width: 25px !important;height: 17px !important;font-size: 5px;">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg> -->
+                        </span>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <div class="carousel slide" data-bs-ride="false" id="carousel-our-capabilities-1">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">1/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Planning.svg" width="40" height="38"></div>
+                                        <h5>Tournament&nbsp;<br>Planning</h5>
+                                        <p class="cap-para">Automates tournament planning with tools for scheduling, team coordination, and venue management</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">2/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Tournament Listing.svg" width="40" height="38"></div>
+                                        <h5>Tournament&nbsp;<br>Listing</h5>
+                                        <p class="cap-para">Creates custom landing pages for tournaments, providing detailed information and attracting participants with ease</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">3/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Draws & Scheduling.svg" width="40" height="38"></div>
+                                        <h5>Draws &amp;&nbsp;<br>Scheduling</h5>
+                                        <p class="cap-para">Streamlines tournaments by automating draw generation, match format customisation, and real-time schedule management</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">4/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Court Management.svg" width="40" height="38"></div>
+                                        <h5>Court&nbsp;<br>Management</h5>
+                                        <p class="cap-para">Court Management optimises court allocation and scheduling, ensuring efficient utilisation of resources and smooth tournament operations</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">5/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Hospitality Management.svg" width="40" height="38"></div>
+                                        <h5>Hospitality&nbsp;<br>Management</h5>
+                                        <p class="cap-para">Manages hospitality services seamlessly, providing athletes and guests with a memorable and comfortable experience throughout the even</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">6/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Player Accreditation.svg" width="40" height="38"></div>
+                                        <h5>Player&nbsp;<br>Accreditation</h5>
+                                        <p class="cap-para">Simplify the accreditation process for players with streamlined system, ensuring quick and efficient validation and access control</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">7/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Validation System.svg" width="40" height="38"></div>
+                                        <h5>Validation&nbsp;<br>System</h5>
+                                        <p class="cap-para">Provides QR-enabled gate system for queue management and coupon validation, ensuring smooth entry and efficient event flow</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">8/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Expense Tracker.svg" width="40" height="38"></div>
+                                        <h5>Expense Tracker</h5>
+                                        <p class="cap-para">Empowers players with an expense tracker tool, allowing them to manage their finances and expenses during the event period</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">9/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Marketing Tools.svg" width="40" height="38"></div>
+                                        <h5>Marketing Tools</h5>
+                                        <p class="cap-para">Promotes tournaments effectively with marketing tools, including email campaigns, social media integration, and more</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-our-capabilities-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-our-capabilities-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="5"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="6"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="7"></button> <button type="button" data-bs-target="#carousel-our-capabilities-1" data-bs-slide-to="8"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3" id="real-time" style="background: none;border: none;">
+                <h2 class="accordion-header capability-head" role="tab">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">
+                        Real-Time Scoring &amp; Standings Updates<span style="position: absolute;right: 1rem;height: 30px !important;width: 30px !important;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down collapse-icon faq-collapse capabilities-expand" style="color: #1F1F1F;width: 25px !important;height: 17px !important;font-size: 5px;">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg> -->
+                        </span>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <div class="carousel slide" data-bs-ride="false" id="carousel-our-capabilities-2">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">1/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Time, Scores and Results.svg" width="40" height="38"></div>
+                                        <h5>Time, Scores and&nbsp;<br>Results</h5>
+                                        <p class="cap-para">TSR streamlines match management, providing real-time updates on match duration, scores, and final outcomes for efficient tournament operations</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">2/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Multiple Court Streaming.svg" width="40" height="38"></div>
+                                        <h5>Multiple Court&nbsp;<br>Streaming</h5>
+                                        <p class="cap-para">Streams multiple matches simultaneously giving viewers access to a diverse range of sporting events in real-time</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">3/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integrated Scorecards & GFX.svg" width="40" height="38"></div>
+                                        <h5>Integrated&nbsp;<br>Scorecards &amp; GFX</h5>
+                                        <p class="cap-para">Get comprehensive insights into each game with integrated scorecards and GFX, providing real-time updates and enhancing the visual appeal of the broadcast</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">4/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Immersive Viewing Experience.svg" width="40" height="38"></div>
+                                        <h5>Immersive Viewing&nbsp;<br>Experience</h5>
+                                        <p class="cap-para">Dive into the heart of the game with immersive visuals and dynamic graphics, providing an unparalleled viewing experience for sports enthusiasts</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">5/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Interactive Engagements.svg" width="40" height="38"></div>
+                                        <h5>Interactive&nbsp;<br>Engagements</h5>
+                                        <p class="cap-para">Allows interactive engagements with interactive features, making every match a shared experience</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">6/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advertisement Possibilities.svg" width="40" height="38"></div>
+                                        <h5>Advertisement&nbsp;<br>Possibilities</h5>
+                                        <p class="cap-para">Provides new revenue opportunities with customisable advertising solutions tailored for sponsors and partners</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">7/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Forum.svg" width="40" height="38"></div>
+                                        <h5>Sports Forum</h5>
+                                        <p class="cap-para">A network for sports professionals, coaches, enthusiasts and experts to engage, exchange knowledge, and foster a connected community to shape the future of sports</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">8/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Highlights & Shorts.svg" width="40" height="38"></div>
+                                        <h5>Highlights &amp;&nbsp;<br>Shorts</h5>
+                                        <p class="cap-para">Relives the best moments of every game with on-demand highlights and shorts, allowing viewers to catch up on key moments or revisit their favourite plays at any time</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">9/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Audience Reach.svg" width="40" height="38"></div>
+                                        <h5>Audience Reach</h5>
+                                        <p class="cap-para">Helps to reach a growing audience of sports enthusiasts, ensuring maximum exposure and participation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-our-capabilities-2" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-our-capabilities-2" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="5"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="6"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="7"></button> <button type="button" data-bs-target="#carousel-our-capabilities-2" data-bs-slide-to="8"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3" id="data-analytics" style="background: none;border: none;">
+                <h2 class="accordion-header capability-head" role="tab">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">
+                        Data Analytics &amp; Reporting<span style="position: absolute;right: 1rem;height: 30px !important;width: 30px !important;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down collapse-icon faq-collapse capabilities-expand" style="color: #1F1F1F;width: 25px !important;height: 17px !important;font-size: 5px;">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg> -->
+                        </span>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <div class="carousel slide" data-bs-ride="false" id="carousel-our-capabilities-3">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">1/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Real-Time Performance Tracking.svg" width="40" height="38"></div>
+                                        <h5>Real-Time&nbsp;<br>Performance Tracking</h5>
+                                        <p class="cap-para">Provides instant insights into athletes’ performance metrics during training and competitions using wearable devices and IoT integration</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">2/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Advanced Data Visualisation.svg" width="40" height="38"></div>
+                                        <h5>Advanced Data&nbsp;<br>Visualisation</h5>
+                                        <p class="cap-para">Provides intuitive dashboards and interactive tools to present complex data in easily understandable formats for coaches, players, and analysts</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">3/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Predictive Analytics.svg" width="40" height="38"></div>
+                                        <h5>
+                                            Predictive&nbsp;<br>Analytics
+                                        </h5>
+                                        <p class="cap-para">Leverages AI and machine learning algorithms to forecast athlete performance trends, injury risks, and game outcomes based on historical and real-time data</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">4/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Customised Reporting Solutions.svg" width="40" height="38"></div>
+                                        <h5>Customised&nbsp;<br>Reporting Solutions</h5>
+                                        <p class="cap-para">Provides tailored reports catering to the unique needs of different stakeholders, including athletes, coaches, teams, and league management</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">5/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Integration with Video Analysis.svg" width="40" height="38"></div>
+                                        <h5>Integration with&nbsp;<br>Video Analysis</h5>
+                                        <p class="cap-para">Synchronises analytics with video footage to provide comprehensive insights on tactics, movement patterns, and game strategies</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">6/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Data-Driven Decision Making.svg" width="40" height="38"></div>
+                                        <h5>Data-Driven&nbsp;<br>Decision Making</h5>
+                                        <p class="cap-para">Empowers teams and organisations to make informed decisions by identifying key performance indicators (KPIs) and trends from raw data</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">7/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Enhanced Fan Engagement.svg" width="40" height="38"></div>
+                                        <h5>Enhanced Fan&nbsp;<br>Engagement</h5>
+                                        <p class="cap-para">Utilises analytics to generate insights and interactive experiences for fans, such as player stats, and personalised content</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">8/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Scalability and Cloud-Based Solutions.svg" width="40" height="38"></div>
+                                        <h5>Scalability and Cloud-<br>Based Solutions</h5>
+                                        <p class="cap-para">Offers scalable, cloud-based platforms for storing and processing large datasets, ensuring accessibility and reliability for global teams</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">9/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Compliance and Data Security.svg" width="40" height="38"></div>
+                                        <h5>Compliance and Data&nbsp;<br>Security</h5>
+                                        <p class="cap-para">Ensures all data analytics systems comply with industry regulations and prioritise the security of sensitive information</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-our-capabilities-3" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-our-capabilities-3" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="5"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="6"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="7"></button> <button type="button" data-bs-target="#carousel-our-capabilities-3" data-bs-slide-to="8"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3" id="revenue" style="background: none;border: none;">
+                <h2 class="accordion-header capability-head" role="tab">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">
+                        Sports Administration &amp; Operations<span style="position: absolute;right: 1rem;height: 30px !important;width: 30px !important;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down collapse-icon faq-collapse capabilities-expand" style="color: #1F1F1F;width: 25px !important;height: 17px !important;font-size: 5px;">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                            </svg> -->
+                        </span>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                        <div class="carousel slide" data-bs-ride="false" id="carousel-our-capabilities-4">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">1/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Membership Management.svg" width="40" height="38"></div>
+                                        <h5>Player/Membership&nbsp;<br>Management</h5>
+                                        <p class="cap-para">Efficiently manages player and membership data with a centralised platform for registrations, renewals, and performance tracking</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">2/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/RR and Technical Officials Management.svg" width="40" height="38"></div>
+                                        <h5>RR and Technical&nbsp;<br>Officials Management</h5>
+                                        <p class="cap-para">Streamlines umpire and technical officials' management with advanced scheduling, performance tracking, and communication tools</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">3/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Match Scheduling.svg" width="40" height="38"></div>
+                                        <h5>Match Scheduling</h5>
+                                        <p class="cap-para">Optimises match scheduling with smart, automated tools that consider team availability, venues, and league requirements</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">4/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Rank List Preparation.svg" width="40" height="38"></div>
+                                        <h5>Rank List&nbsp;<br>Preparation</h5>
+                                        <p class="cap-para">Automates rank list preparation with accurate, real-time data analysis and performance metrics. Delivers transparent and reliable rankings for players, teams, and leagues effortlessly</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">5/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Certificate Generation.svg" width="40" height="38"></div>
+                                        <h5>Certificate&nbsp;<br>Generation</h5>
+                                        <p class="cap-para">Generates professional, error-free certificates for participants, coaches, and officials instantly with automated processing</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">6/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Payment Management.svg" width="40" height="38"></div>
+                                        <h5>Payment&nbsp;<br>Management</h5>
+                                        <p class="cap-para">Manages tournament payments with the integrated payment system, ensuring<br>secure transactions and hassle-free financial management</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">7/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Sports Directory.svg" width="40" height="38"></div>
+                                        <h5>Sports Directory</h5>
+                                        <p class="cap-para">A comprehensive directory to help players, coaches, trainers, retailers and sports organisations, connect, find opportunities, and grow</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">8/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Employee Payroll Management.svg" width="40" height="38"></div>
+                                        <h5>Employee Payroll&nbsp;<br>Management</h5>
+                                        <p class="cap-para">Automates employee payroll management with precise calculations and timely disbursements</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item capability-slider">
+                                    <div class="d-flex flex-column align-items-start p-4">
+                                        <div class="col-12 slider-number"><span class="slide-number-label">9/9</span></div>
+                                        <div class="d-flex flex-column justify-content-center cap-img-container"><img src="assets/images/Auto Email, SMS Integrations & Online Payments.svg" width="40" height="38"></div>
+                                        <h5>Auto Email, SMS Integrations&nbsp;<br>&amp; Online Payments</h5>
+                                        <p class="cap-para">Streamlines communication with auto email and SMS integrations, and simplifies payments with secure online solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-our-capabilities-4" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-our-capabilities-4" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="5"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="6"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="7"></button> <button type="button" data-bs-target="#carousel-our-capabilities-4" data-bs-slide-to="8"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+     
 
 
         <!--capabilities One end-->
@@ -933,7 +1291,7 @@
             .contact-modal-content {
                 width: 90%;
                 padding: 20px;
-                margin: 20px;
+                /* margin: 20px; */
             }
 
             .contact-modal-header h3 {
