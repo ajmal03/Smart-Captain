@@ -4524,7 +4524,7 @@ body.boxed-wrapper {
   bottom: 9px;
   left: 0;
   right: 0;
-  height: 1px;
+/*   height: 1px; */
   background-color: var(--moniz-primary, #fc653c);
   content: "";
   -webkit-transition: all 500ms ease;
