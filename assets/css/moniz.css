@@ -4507,7 +4507,7 @@ body.boxed-wrapper {
 
 .footer-widget__contact-mail {
   font-size: 16px;
-  color: var(--moniz-primary, #fc653c);
+  color:#a3a1a1;
   font-weight: 400;
   position: relative;
   display: inline-block;
@@ -4516,7 +4516,7 @@ body.boxed-wrapper {
 }
 
 .footer-widget__contact-mail:hover {
-  color: var(--moniz-base, #ffffff);
+  color:#006a4e;
 }
 
 .footer-widget__contact-mail:before {
@@ -4525,7 +4525,7 @@ body.boxed-wrapper {
   left: 0;
   right: 0;
 /*   height: 1px; */
-  background-color: var(--moniz-primary, #fc653c);
+/*   background-color: var(--moniz-primary, #fc653c); */
   content: "";
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
