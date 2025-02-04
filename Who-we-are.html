@@ -142,31 +142,33 @@
                             <!-- Main Text with Side Image -->
                             <div class="main-text-container">
                                 <div class="main-text">
-                                    <p>Imagine a world where every athlete’s true potential is unlocked, where teams train smarter, compete harder, and federations make data-driven decisions with 
-                                        absolute confidence. This is the future we are building at <strong>Smart Sports Solutions</strong>. We don’t just follow innovation—we lead it, using
+                                    <p>Imagine a world where every athlete's true potential is unlocked, where teams train smarter, compete harder, and federations make data-driven decisions with 
+                                        absolute confidence. This is the future we are building at <strong>Smart Sports Solutions</strong>. We don't just follow innovation—we lead it, using
                                         <strong>AI, machine learning, and AR/VR-powered technology</strong> to transform how sports are played, coached, and managed. <strong>Inspired by Saudi Vision 2030</strong>, 
                                         our mission is clear: to create a thriving sports ecosystem that nurtures talent, enhances performance, and redefines excellence.
 </p>
                                     
                                     <div class="feature-box">
-                                        <i class="fas fa-robot"></i>
-                                        <p>With over a decade of experience, our roots in Saudi Arabia have grown into a global force in sports innovation. We have worked alongside athletes, 
-                                            coaches, and organisations worldwide, proving that the right blend of technology and vision can turn potential into podium finishes. From grassroots 
-                                            development to elite competition, we provide the solutions that make the difference between good and great—between participation and domination.
+                                        <i class="fas fa-microchip"></i>
+                                        <p>But for us, it's not just about technology—it's about <strong>building champions</strong>. 
+                                            Every number, every data point, every insight fuels the journey of an athlete
+                                             striving for greatness, a coach shaping the next generation, or a federation strengthening 
+                                             its national sports strategy. Whether it's <strong>identifying raw talent, personalising training programs, optimising game strategies,
+                                             or enhancing fan engagement</strong>, our solutions bridge the gap between <strong>science and sport</strong>, making every decision smarter, every move sharper, and every moment count.
 </p>
                                     </div>
                                     
                                     <div class="feature-box">
-                                        <i class="fas fa-trophy"></i>
+                                        <i class="fas fa-chart-line"></i>
                                         <p>With <strong>over a decade of experience</strong>, our roots in Saudi Arabia have grown into a global force in sports innovation. 
                                             We have worked alongside <strong>athletes, coaches, and organisations worldwide</strong>, proving that the right blend of technology and vision 
                                             can <strong>turn potential into podium finishes</strong>. From grassroots development to elite competition, we provide the solutions that make the difference between good and great—between participation and domination.
 </p>
                                     </div>
                                     <div class="feature-box">
-                                        <i class="fas fa-trophy"></i>
+                                        <i class="fas fa-handshake"></i>
                                         <p>At <strong>Smart Sports Solutions</strong>, we believe the future of
-                                            sports isn’t just coming—it’s already here. And we are the ones shaping it. Whether you are an athlete chasing a dream, a coach refining a strategy, or a 
+                                            sports isn't just coming—it's already here. And we are the ones shaping it. Whether you are an athlete chasing a dream, a coach refining a strategy, or a 
                                             federation striving for sporting excellence, we are your <strong>trusted partner in the pursuit of greatness</strong>. 
 </p>
                                     </div>
@@ -175,6 +177,130 @@
                                     <img src="assets/images/resources/CD-about.jpg" alt="Sports Technology">
                                 </div>
                             </div>
+                            <div class="future-statement">
+                                <div class="future-content">
+                                    <span class="highlight-line"></span>
+                                    <h2>The future of sports is here. Let's build it together.</h2>
+                                    <span class="highlight-line"></span>
+                                </div>
+                            </div>
+
+                            <style>
+                                .future-statement {
+                                    text-align: center;
+                                    margin: 80px auto;
+                                    padding: 50px 30px;
+                                    max-width: 60%;
+                                    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+                                    border-radius: 20px;
+                                    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+                                    position: relative;
+                                    overflow: hidden;
+                                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                                }
+
+                                .future-content {
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 25px;
+                                }
+
+                                .highlight-line {
+                                    display: block;
+                                    width: 80px;
+                                    height: 3px;
+                                    background: linear-gradient(90deg, transparent, var(--moniz-primary), transparent);
+                                    border-radius: 3px;
+                                }
+
+                                .future-statement h2 {
+                                    font-size: 2.5rem;
+                                    color: #1a1a1a;
+                                    margin: 0;
+                                    font-weight: 700;
+                                    line-height: 1.3;
+                                    letter-spacing: -0.02em;
+                                    position: relative;
+                                    z-index: 1;
+                                }
+
+                                .future-statement::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+                                    opacity: 0;
+                                    transition: opacity 0.4s ease;
+                                }
+
+                                .future-statement:hover {
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+                                }
+
+                                .future-statement:hover::before {
+                                    opacity: 1;
+                                }
+
+                                /* Responsive Breakpoints */
+                                @media (max-width: 1200px) {
+                                    .future-statement {
+                                        max-width: 70%;
+                                        padding: 45px 25px;
+                                    }
+                                    .future-statement h2 {
+                                        font-size: 2.2rem;
+                                    }
+                                }
+
+                                @media (max-width: 991px) {
+                                    .future-statement {
+                                        max-width: 80%;
+                                        padding: 40px 20px;
+                                        margin: 60px auto;
+                                    }
+                                    .future-statement h2 {
+                                        font-size: 2rem;
+                                    }
+                                    .highlight-line {
+                                        width: 60px;
+                                    }
+                                }
+
+                                @media (max-width: 768px) {
+                                    .future-statement {
+                                        max-width: 90%;
+                                        padding: 35px 20px;
+                                        margin: 50px auto;
+                                    }
+                                    .future-statement h2 {
+                                        font-size: 1.8rem;
+                                    }
+                                    .highlight-line {
+                                        width: 50px;
+                                    }
+                                }
+
+                                @media (max-width: 480px) {
+                                    .future-statement {
+                                        max-width: 95%;
+                                        padding: 30px 15px;
+                                        margin: 40px auto;
+                                    }
+                                    .future-statement h2 {
+                                        font-size: 1.5rem;
+                                    }
+                                    .highlight-line {
+                                        width: 40px;
+                                        height: 2px;
+                                    }
+                                }
+                            </style>
 
                             <!-- Vision Mission Cards -->
                             <div class="vision-mission">
