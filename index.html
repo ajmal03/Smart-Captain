@@ -530,8 +530,12 @@
                                 <div class="box-icon">
                                     <i class="fas fa-chart-line"></i>
                                 </div>
-                                <h3>Strategic Vision</h3>
-                                <p>Through Vision 2030, Saudi Arabia is establishing a comprehensive sports ecosystem that promotes excellence, health, and community engagement while creating sustainable economic opportunities.</p>
+                                <div class="box-content">
+                                    <h3>Strategic Vision</h3>
+                                    <div class="divider"></div>
+                                    <p>Through Vision 2030, Saudi Arabia is establishing a comprehensive sports ecosystem that promotes excellence, health, and community engagement while creating sustainable economic opportunities.</p>
+                                </div>
+                                <div class="hover-overlay"></div>
                             </div>
                         </div>
 
@@ -541,8 +545,12 @@
                                 <div class="box-icon">
                                     <i class="fas fa-coins"></i>
                                 </div>
-                                <h3>Economic Impact</h3>
-                                <p>The sports sector serves as a catalyst for economic diversification, generating employment opportunities, attracting investments, and fostering innovation across multiple industries.</p>
+                                <div class="box-content">
+                                    <h3>Economic Impact</h3>
+                                    <div class="divider"></div>
+                                    <p>The sports sector serves as a catalyst for economic diversification, generating employment opportunities, attracting investments, and fostering innovation across multiple industries.</p>
+                                </div>
+                                <div class="hover-overlay"></div>
                             </div>
                         </div>
 
@@ -552,8 +560,12 @@
                                 <div class="box-icon">
                                     <i class="fas fa-building"></i>
                                 </div>
-                                <h3>Infrastructure & Innovation</h3>
-                                <p>With world-class facilities, advanced training centers, and digital transformation initiatives, Saudi Arabia is positioned as a global hub for sports technology and excellence.</p>
+                                <div class="box-content">
+                                    <h3>Infrastructure & Innovation</h3>
+                                    <div class="divider"></div>
+                                    <p>With world-class facilities, advanced training centers, and digital transformation initiatives, Saudi Arabia is positioned as a global hub for sports technology and excellence.</p>
+                                </div>
+                                <div class="hover-overlay"></div>
                             </div>
                         </div>
 
@@ -563,8 +575,12 @@
                                 <div class="box-icon">
                                     <i class="fas fa-flag"></i>
                                 </div>
-                                <h3>Leadership & Commitment</h3>
-                                <p>Under visionary leadership, Saudi Arabia demonstrates unwavering commitment to developing sports infrastructure, nurturing talent, and implementing innovative solutions that drive sustainable growth.</p>
+                                <div class="box-content">
+                                    <h3>Leadership & Commitment</h3>
+                                    <div class="divider"></div>
+                                    <p>Under visionary leadership, Saudi Arabia demonstrates unwavering commitment to developing sports infrastructure, nurturing talent, and implementing innovative solutions that drive sustainable growth.</p>
+                                </div>
+                                <div class="hover-overlay"></div>
                             </div>
                         </div>
                     </div>
@@ -573,19 +589,35 @@
 
             <style>
                 .beyond-limits {
-                    padding: 100px 0;
+                    padding: 120px 0;
                     background-color: #f8f9fa;
                     position: relative;
+                    overflow: hidden;
                 }
 
                 .section-title {
-                    margin-bottom: 50px;
+                    margin-bottom: 60px;
+                    position: relative;
                 }
 
                 .section-title__title {
                     font-size: 40px;
                     font-weight: 700;
                     color: #1c1c1c;
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .section-title__title::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 3px;
+                    background: #006A4E;
+                    border-radius: 2px;
                 }
 
                 .beyond-limits__content {
@@ -599,25 +631,49 @@
                     height: 100%;
                     border-radius: 15px;
                     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-                    transition: all 0.3s ease;
+                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
                     position: relative;
                     overflow: hidden;
+                    z-index: 1;
                 }
 
                 .beyond-limits__box:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-10px);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
                 }
 
                 .box-icon {
+                    width: 80px;
+                    height: 80px;
+                    background: rgba(0, 106, 78, 0.1);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    position: relative;
+                    z-index: 2;
+                    transition: all 0.3s ease;
+                }
+
+                .box-icon i {
                     font-size: 32px;
                     color: #006A4E;
-                    margin-bottom: 20px;
                     transition: all 0.3s ease;
                 }
 
                 .beyond-limits__box:hover .box-icon {
-                    transform: scale(1.1);
+                    background: #006A4E;
+                    transform: scale(1.1) rotate(5deg);
+                }
+
+                .beyond-limits__box:hover .box-icon i {
+                    color: #ffffff;
+                }
+
+                .box-content {
+                    position: relative;
+                    z-index: 2;
                 }
 
                 .beyond-limits__box h3 {
@@ -625,7 +681,20 @@
                     font-size: 24px;
                     font-weight: 600;
                     margin-bottom: 15px;
-                    position: relative;
+                    transition: all 0.3s ease;
+                }
+
+                .divider {
+                    width: 50px;
+                    height: 3px;
+                    background: #006A4E;
+                    margin-bottom: 20px;
+                    border-radius: 2px;
+                    transition: all 0.3s ease;
+                }
+
+                .beyond-limits__box:hover .divider {
+                    width: 70px;
                 }
 
                 .beyond-limits__box p {
@@ -633,9 +702,27 @@
                     font-size: 16px;
                     line-height: 1.7;
                     margin: 0;
+                    position: relative;
+                    z-index: 2;
+                    transition: all 0.3s ease;
                 }
 
-                /* Responsive Styles */
+                .hover-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, rgba(0, 106, 78, 0.03), rgba(0, 106, 78, 0.08));
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                    z-index: 1;
+                }
+
+                .beyond-limits__box:hover .hover-overlay {
+                    opacity: 1;
+                }
+
                 @media (max-width: 991px) {
                     .beyond-limits {
                         padding: 80px 0;
@@ -653,6 +740,7 @@
 
                     .beyond-limits__box {
                         padding: 30px;
+                        margin-bottom: 30px;
                     }
 
                     .beyond-limits__box h3 {
@@ -664,17 +752,18 @@
                     }
 
                     .box-icon {
-                        font-size: 28px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .box-icon i {
+                        font-size: 24px;
                     }
                 }
 
                 @media (max-width: 575px) {
                     .section-title__title {
                         font-size: 28px;
-                    }
-
-                    .beyond-limits__box {
-                        margin-bottom: 20px;
                     }
                 }
             </style>
