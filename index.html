@@ -576,6 +576,12 @@
                 </div>
                  <!-- Vision Content -->
                  <div class="vision-content text-center">
+                    <div class="vision-shapes">
+                        <div class="shape-1"></div>
+                        <div class="shape-2"></div>
+                        <div class="shape-3"></div>
+                        <div class="shape-4"></div>
+                    </div>
                     <div class="vision-content__inner">
                         <p class="vision-lead">With its state-of-the-art stadiums, elite training facilities, and world-class digital transformation initiatives, Saudi Arabia is the perfect hub for sports technology innovation.</p>
                         
@@ -608,7 +614,7 @@
                 }
 
                 .section-title__title::after {
-                    content: '';
+                    /* content: ''; */
                     position: absolute;
                     bottom: -15px;
                     left: 50%;
@@ -778,52 +784,127 @@
 
                 /* New Vision Content Styles */
                 .vision-content {
-                    max-width: 900px;
-                    margin: 0 auto 60px;
-                    padding: 40px;
+                    position: relative;
+                    max-width: 1000px;
+                    margin: 80px auto;
+                    padding: 60px 40px;
                     background: rgba(255, 255, 255, 0.95);
-                    border-radius: 20px;
-                    box-shadow: 0 10px 30px rgba(0, 106, 78, 0.08);
+                    border-radius: 30px;
+                    box-shadow: 0 20px 40px rgba(0, 106, 78, 0.08);
+                    overflow: hidden;
+                }
+
+                .vision-shapes {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    z-index: 0;
+                }
+
+                .shape-1 {
+                    position: absolute;
+                    top: -30px;
+                    left: -30px;
+                    width: 160px;
+                    height: 160px;
+                    background: rgba(0, 106, 78, 0.05);
+                    border-radius: 50%;
+                    animation: float 8s ease-in-out infinite;
+                }
+
+                .shape-2 {
+                    position: absolute;
+                    bottom: -40px;
+                    right: -40px;
+                    width: 200px;
+                    height: 200px;
+                    background: rgba(0, 106, 78, 0.03);
+                    border-radius: 50%;
+                    animation: float 10s ease-in-out infinite;
+                }
+
+                .shape-3 {
+                    position: absolute;
+                    top: 50%;
+                    right: 50px;
+                    width: 70px;
+                    height: 70px;
+                    background: rgba(0, 106, 78, 0.04);
+                    border-radius: 12px;
+                    transform: rotate(45deg);
+                    animation: rotate 15s linear infinite;
+                }
+
+                .shape-4 {
+                    position: absolute;
+                    bottom: 70px;
+                    left: 30px;
+                    width: 90px;
+                    height: 90px;
+                    border: 15px solid rgba(0, 106, 78, 0.03);
+                    border-radius: 50%;
+                    animation: pulse 4s ease-in-out infinite;
+                }
+
+                .vision-content__inner {
+                    position: relative;
+                    z-index: 1;
                 }
 
                 .vision-lead {
-                    font-size: 20px;
-                    line-height: 1.8;
+                    font-size: 24px;
+                    line-height: 1.6;
                     color: #1c1c1c;
-                    margin-bottom: 30px;
                     font-weight: 500;
+                    margin-bottom: 30px;
+                    position: relative;
                 }
 
                 .vision-text {
                     font-size: 18px;
                     line-height: 1.8;
-                    color: #666666;
-                    margin-bottom: 30px;
+                    color: #555555;
+                    margin-bottom: 35px;
                 }
 
                 .vision-highlight {
-                    font-size: 26px;
+                    font-size: 28px;
                     font-weight: 600;
                     color: #006A4E;
                     margin: 0;
                     position: relative;
                     display: inline-block;
+                    padding: 10px 30px;
+                    background: rgba(0, 106, 78, 0.05);
+                    border-radius: 30px;
                 }
 
-                /* Update card columns */
-                .col-lg-4 {
-                    flex: 0 0 33.333333%;
-                    max-width: 33.333333%;
+                @keyframes float {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-20px); }
+                }
+
+                @keyframes rotate {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+
+                @keyframes pulse {
+                    0%, 100% { transform: scale(1); opacity: 0.5; }
+                    50% { transform: scale(1.1); opacity: 0.8; }
                 }
 
                 @media (max-width: 991px) {
                     .vision-content {
-                        padding: 30px;
-                        margin-bottom: 50px;
+                        margin: 60px auto;
+                        padding: 50px 30px;
                     }
 
                     .vision-lead {
-                        font-size: 18px;
+                        font-size: 22px;
                     }
 
                     .vision-text {
@@ -831,23 +912,18 @@
                     }
 
                     .vision-highlight {
-                        font-size: 22px;
-                    }
-
-                    .col-lg-4 {
-                        flex: 0 0 100%;
-                        max-width: 100%;
+                        font-size: 24px;
                     }
                 }
 
                 @media (max-width: 767px) {
                     .vision-content {
-                        padding: 25px;
-                        margin-bottom: 40px;
+                        margin: 40px auto;
+                        padding: 40px 25px;
                     }
 
                     .vision-lead {
-                        font-size: 16px;
+                        font-size: 20px;
                     }
 
                     .vision-text {
@@ -855,7 +931,13 @@
                     }
 
                     .vision-highlight {
-                        font-size: 20px;
+                        font-size: 22px;
+                        padding: 8px 20px;
+                    }
+
+                    .shape-1, .shape-2 {
+                        width: 120px;
+                        height: 120px;
                     }
                 }
             </style>
@@ -869,9 +951,11 @@
         <section class="features-section">
             <div class="container">
                 <div class="section-title text-center">
+                    <span class="section-subtitle">Why Choose Us</span>
                     <h2>The Edge That Sets Us Apart</h2>
+                    <div class="title-divider"></div>
                 </div>
-                <div class="row">
+                <div class="row g-4">
                     <!-- Feature Card 1 -->
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="feature-card">
@@ -936,78 +1020,179 @@
             </div>
             <style>
                 .features-section {
-                    padding: 100px 0;
-                    background-color: #ffffff;
+                    padding: 120px 0;
+                    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+                    position: relative;
                 }
-                
+
                 .section-title {
-                    margin-bottom: 50px;
+                    margin-bottom: 70px;
+                    position: relative;
                 }
-                
-                .section-title h2 {
-                    font-size: 36px;
-                    color: #333;
-                    font-weight: 700;
-                }
-                
-                .feature-card {
-                    background: #fff;
-                    padding: 40px;  /* Increased consistent padding */
-                    border-radius: 10px;
-                    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-                    margin-bottom: 30px;
-                    transition: all 0.3s ease;
-                    height: 300px;  /* Fixed height for all cards */
-                    width: 100%;    /* Full width within column */
-                    display: flex;
-                    flex-direction: column;
-                }
-                
-                .feature-card:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-                }
-                
-                .feature-icon {
-                    font-size: 40px;
+
+                .section-subtitle {
                     color: #006A4E;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-bottom: 15px;
+                    display: block;
+                }
+
+                .section-title h2 {
+                    font-size: 40px;
+                    color: #1c1c1c;
+                    font-weight: 700;
                     margin-bottom: 20px;
                 }
-                
-                .feature-card h3 {
-                    font-size: 22px;
-                    color: #333;
-                    margin-bottom: 15px;
-                    font-weight: 600;
+
+                .title-divider {
+                    width: 80px;
+                    height: 3px;
+                    /* background: #006A4E; */
+                    margin: 0 auto;
+                    position: relative;
                 }
-                
+
+                .title-divider::before,
+                .title-divider::after {
+                    /* content: ''; */
+                    position: absolute;
+                    width: 40px;
+                    height: 3px;
+                    background: #006A4E;
+                    top: -6px;
+                }
+
+                .title-divider::before {
+                    left: 15px;
+                }
+
+                .title-divider::after {
+                    right: 15px;
+                }
+
+                .feature-card {
+                    background: #ffffff;
+                    padding: 40px 30px;
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                    margin-bottom: 30px;
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid rgba(0, 106, 78, 0.1);
+                    height: 100%;
+                    min-height: 320px;
+                }
+
+                .feature-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba(0, 106, 78, 0.05) 0%, rgba(0, 106, 78, 0) 100%);
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                }
+
+                .feature-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+                }
+
+                .feature-card:hover::before {
+                    opacity: 1;
+                }
+
+                .feature-icon {
+                    width: 80px;
+                    height: 80px;
+                    background: rgba(0, 106, 78, 0.1);
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    position: relative;
+                    transition: all 0.5s ease;
+                }
+
+                .feature-icon i {
+                    font-size: 32px;
+                    color: #006A4E;
+                    transition: all 0.5s ease;
+                }
+
+                .feature-card:hover .feature-icon {
+                    background: #006A4E;
+                    transform: rotate(-10deg);
+                }
+
+                .feature-card:hover .feature-icon i {
+                    color: #ffffff;
+                    transform: scale(1.1);
+                }
+
+                .feature-card h3 {
+                    font-size: 24px;
+                    color: #1c1c1c;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    position: relative;
+                    transition: all 0.3s ease;
+                }
+
                 .feature-card p {
                     font-size: 16px;
-                    color: #666;
-                    line-height: 1.6;
+                    color: #666666;
+                    line-height: 1.7;
                     margin: 0;
-                    flex-grow: 1;  /* Allow text to fill remaining space */
+                    position: relative;
                 }
-                
+
                 @media (max-width: 991px) {
+                    .features-section {
+                        padding: 90px 0;
+                    }
+
+                    .section-title h2 {
+                        font-size: 36px;
+                    }
+
                     .feature-card {
-                        margin-bottom: 30px;
-                        height: 320px;  /* Slightly taller on tablets */
+                        min-height: 300px;
                     }
                 }
-                
+
                 @media (max-width: 767px) {
                     .features-section {
-                        padding: 60px 0;
+                        padding: 70px 0;
                     }
-                    
+
                     .section-title h2 {
                         font-size: 30px;
                     }
 
                     .feature-card {
-                        height: auto;  /* Allow height to adjust on mobile */
-                        min-height: 280px;  /* Minimum height on mobile */
+                        padding: 30px 25px;
+                        min-height: 280px;
+                    }
+
+                    .feature-icon {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .feature-icon i {
+                        font-size: 24px;
+                    }
+
+                    .feature-card h3 {
+                        font-size: 20px;
                     }
                 }
             </style>
