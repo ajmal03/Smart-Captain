@@ -516,436 +516,483 @@
         </style>
 
         <!--Welcome One End-->
-        <!--Beyond Limits Section Start-->
-        <section class="beyond-limits">
+
+
+
+
+
+
+        <section class="web-solutions">
             <div class="container">
                 <div class="section-title text-center">
                     <h2 class="section-title__title">Beyond Limits. Beyond Technology.</h2>
                     <p class="section-title__text">Saudi Arabia is not just embracing sports, it is investing in its future.</p>
                 </div>
-
-               
-
-                <div class="beyond-limits__content">
-                    <div class="row">
-                        <!-- Vibrant Society Card -->
-                        <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="beyond-limits__box">
-                                <div class="box-icon">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="web-solutions__tab-box tabs-box">
+                            <ul class="tab-buttons clearfix list-unstyled">
+                                <li data-tab="#tab1" class="tab-btn active-btn">
                                     <i class="fas fa-users"></i>
-                                </div>
-                                <div class="box-content">
-                                    <h3>A Vibrant Society</h3>
-                                    <div class="divider"></div>
-                                    <p>Sports unite communities and inspire future generations. With Vision 2030, Saudi Arabia is fostering a healthier, more active society.</p>
-                                </div>
-                                <div class="hover-overlay"></div>
-                            </div>
-                        </div>
-
-                        <!-- Thriving Economy Card -->
-                        <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="beyond-limits__box">
-                                <div class="box-icon">
+                                    <span>A Vibrant Society</span>
+                                </li>
+                                <li data-tab="#tab2" class="tab-btn">
                                     <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="box-content">
-                                    <h3>A Thriving Economy</h3>
-                                    <div class="divider"></div>
-                                    <p>The sports industry is a key driver of economic growth, creating jobs and opportunities while boosting national pride.</p>
-                                </div>
-                                <div class="hover-overlay"></div>
-                            </div>
-                        </div>
-
-                        <!-- Ambitious Nation Card -->
-                        <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="beyond-limits__box">
-                                <div class="box-icon">
+                                    <span>A Thriving Economy</span>
+                                </li>
+                                <li data-tab="#tab3" class="tab-btn">
                                     <i class="fas fa-crown"></i>
+                                    <span>An Ambitious Nation</span>
+                                </li>
+                            </ul>
+
+                            <style>
+                                .tab-buttons {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 20px;
+                                    padding: 0;
+                                    margin: 0 0 40px;
+                                    flex-wrap: wrap;
+                                }
+
+                                .tab-btn {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    padding: 15px 30px;
+                                    background: #fff;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+                                }
+
+                                .tab-btn i {
+                                    font-size: 20px;
+                                    color: #006A4E;
+                                }
+
+                                .tab-btn.active-btn {
+                                    background: #006A4E;
+                                    color: #fff;
+                                }
+
+                                .tab-btn.active-btn i {
+                                    color: #fff;
+                                }
+
+                                /* Tablet */
+                                @media (max-width: 991px) {
+                                    .tab-buttons {
+                                        gap: 15px;
+                                        margin-bottom: 30px;
+                                        padding: 0 15px;
+                                    }
+
+                                    .tab-btn {
+                                        padding: 12px 25px;
+                                        font-size: 15px;
+                                    }
+
+                                    .tab-btn i {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                /* Mobile */
+                                @media (max-width: 767px) {
+                                    .tab-buttons {
+                                        flex-direction: column;
+                                        align-items: center;
+                                        gap: 12px;
+                                        margin-bottom: 25px;
+                                    }
+
+                                    .tab-btn {
+                                        width: 100%;
+                                        max-width: 280px;
+                                        justify-content: center;
+                                        padding: 12px 20px;
+                                        font-size: 14px;
+                                    }
+
+                                    .tab-btn i {
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                /* Small Mobile */
+                                @media (max-width: 480px) {
+                                    .tab-buttons {
+                                        gap: 10px;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .tab-btn {
+                                        max-width: 240px;
+                                        padding: 10px 15px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            </style>
+
+                            <div class="tabs-content">
+                                <div class="tab active-tab" id="tab1">
+                                    <div class="web-solutions__content">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-img">
+                                                    <img src="assets/images/resources/we-change-right-img-11.jpg" alt="Virtual Training">
+                                                    <div class="experience-years">
+                                                        <span class="number">VR</span>
+                                                        <p>Training</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-right">
+                                                    <h3 class="content-title">Immersive Virtual Training</h3>
+                                                    <p class="web-solutions__content-desc">
+                                                        Sports unite communities and inspire future generations. With Vision 2030, Saudi Arabia is fostering a healthier, more active society.
+                                                    </p>
+                                                    <!-- <ul class="features-list">
+                                                        <li><i class="fas fa-check"></i> Real-time Motion Tracking</li>
+                                                        <li><i class="fas fa-check"></i> Performance Analytics</li>
+                                                        <li><i class="fas fa-check"></i> Customizable Scenarios</li>
+                                                    </ul> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="box-content">
-                                    <h3>An Ambitious Nation</h3>
-                                    <div class="divider"></div>
-                                    <p>Saudi Arabia is committed to excellence, efficiency, and innovation, backed by world-class infrastructure, cutting-edge technology, and visionary leadership under <strong>His Royal Highness Prince Mohammed bin Salman bin Abdulaziz Al Saud.</strong></p>
+
+                                <div class="tab" id="tab2">
+                                    <div class="web-solutions__content">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-img">
+                                                    <img src="assets/images/resources/we-change-right-img-11.jpg" alt="AI Analytics">
+                                                    <div class="experience-years">
+                                                        <span class="number">AI</span>
+                                                        <p>Powered</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-right">
+                                                    <h3 class="content-title">Advanced AI Analytics</h3>
+                                                    <p class="web-solutions__content-desc">
+                                                        The sports industry is a key driver of economic growth, creating jobs and opportunities while boosting national pride.
+                                                    </p>
+                                                    <!-- <ul class="features-list">
+                                                        <li><i class="fas fa-check"></i> Predictive Analytics</li>
+                                                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                                                        <li><i class="fas fa-check"></i> Injury Prevention</li>
+                                                    </ul> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hover-overlay"></div>
+
+                                <div class="tab" id="tab3">
+                                    <div class="web-solutions__content">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-img">
+                                                    <img src="assets/images/resources/we-change-right-img-11.jpg" alt="Smart Apps">
+                                                    <div class="experience-years">
+                                                        <span class="number">APP</span>
+                                                        <p>Solutions</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6">
+                                                <div class="web-solutions__content-right">
+                                                    <h3 class="content-title">Smart Mobile Applications</h3>
+                                                    <p class="web-solutions__content-desc">
+                                                        Saudi Arabia is committed to excellence, efficiency, and innovation, backed by world-class infrastructure, 
+                                                        cutting-edge technology, and visionary leadership under His Royal Highness Prince Mohammed bin Salman bin Abdulaziz Al Saud.
+                                                    </p>
+                                                    <!-- <ul class="features-list">
+                                                        <li><i class="fas fa-check"></i> Real-time Tracking</li>
+                                                        <li><i class="fas fa-check"></i> Team Collaboration</li>
+                                                        <li><i class="fas fa-check"></i> Progress Monitoring</li>
+                                                    </ul> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+<!-- 
+                                <div class="web-solutions__content">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-12 col-lg-12">
+                                            <div class="web-solutions__content-right text-end">
+                                                <h3 class="content-title">Saudi Arabia: The Future of Sports Technology</h3>
+                                                <p class="web-solutions__content-desc">
+                                                    With its state-of-the-art stadiums, elite training facilities, and world-class digital transformation initiatives, Saudi Arabia is the perfect hub for sports technology innovation.
+                                                </p>
+                                                <p class="web-solutions__content-desc">
+                                                    Saudi Arabia is a land of limitless potential with rising talent, and a commitment to excellence. Smart Sports Solutions amplifies this potential with cutting-edge sports technology, empowering athletes, coaches, and federations to succeed.
+                                                </p>
+                                                <p class="web-solutions__content-desc highlight">
+                                                    <strong>Because Saudi Deserves the Best.</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
-                    </div>
-                </div>
-                 <!-- Vision Content -->
-                 <div class="vision-content text-center">
-                    <div class="vision-shapes">
-                        <div class="shape-1"></div>
-                        <div class="shape-2"></div>
-                        <div class="shape-3"></div>
-                        <div class="shape-4"></div>
-                    </div>
-                    <div class="vision-content__inner">
-                        <p class="vision-lead">With its state-of-the-art stadiums, elite training facilities, and world-class digital transformation initiatives, Saudi Arabia is the perfect hub for sports technology innovation.</p>
-                        
-                        <p class="vision-text">Saudi Arabia is a land of limitless potential with rising talent, and a commitment to excellence. Smart Sports Solutions amplifies this potential with cutting-edge sports technology, empowering athletes, coaches, and federations to succeed.</p>
-                        
-                        <p class="vision-highlight">Because Saudi Deserves the Best.</p>
                     </div>
                 </div>
             </div>
 
+
             <style>
-                .beyond-limits {
+                .web-solutions {
                     padding: 120px 0;
-                    background-color: #f8f9fa;
+                    background: #f8f9fa;
                     position: relative;
-                    overflow: hidden;
                 }
 
                 .section-title {
                     margin-bottom: 60px;
-                    position: relative;
                 }
 
                 .section-title__title {
-                    font-size: 40px;
+                    font-size: 42px;
                     font-weight: 700;
+                    margin-bottom: 15px;
                     color: #1c1c1c;
-                    position: relative;
-                    display: inline-block;
-                }
-
-                .section-title__title::after {
-                    /* content: ''; */
-                    position: absolute;
-                    bottom: -15px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 80px;
-                    height: 3px;
-                    background: #006A4E;
-                    border-radius: 2px;
                 }
 
                 .section-title__text {
                     font-size: 18px;
-                    line-height: 1.6;
-                    color: #666666;
-                    margin-top: 20px;
-                    max-width: 800px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    color: #666;
                 }
 
-                .beyond-limits__content {
-                    max-width: 1200px;
-                    margin: 0 auto;
+                .tab-buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 0;
+                    margin: 0 0 40px;
+                    flex-wrap: wrap;
                 }
 
-                .beyond-limits__box {
-                    background: #ffffff;
-                    padding: 40px;
-                    height: 100%;
-                    border-radius: 15px;
-                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-                    position: relative;
-                    overflow: hidden;
-                    z-index: 1;
-                }
-
-                .beyond-limits__box:hover {
-                    transform: translateY(-10px);
-                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-                }
-
-                .box-icon {
-                    width: 80px;
-                    height: 80px;
-                    background: rgba(0, 106, 78, 0.1);
-                    border-radius: 50%;
+                .tab-btn {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    margin-bottom: 25px;
-                    position: relative;
-                    z-index: 2;
+                    gap: 10px;
+                    padding: 15px 30px;
+                    background: #fff;
+                    border-radius: 30px;
+                    cursor: pointer;
                     transition: all 0.3s ease;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
                 }
 
-                .box-icon i {
-                    font-size: 32px;
+                .tab-btn i {
+                    font-size: 20px;
                     color: #006A4E;
-                    transition: all 0.3s ease;
                 }
 
-                .beyond-limits__box:hover .box-icon {
+                .tab-btn.active-btn {
                     background: #006A4E;
-                    transform: scale(1.1) rotate(5deg);
+                    color: #fff;
                 }
 
-                .beyond-limits__box:hover .box-icon i {
-                    color: #ffffff;
+                .tab-btn.active-btn i {
+                    color: #fff;
                 }
 
-                .box-content {
+                .web-solutions__content-img {
                     position: relative;
-                    z-index: 2;
+                    border-radius: 15px;
+                    overflow: hidden;
                 }
 
-                .beyond-limits__box h3 {
-                    color: #1c1c1c;
-                    font-size: 24px;
-                    font-weight: 600;
-                    margin-bottom: 15px;
-                    transition: all 0.3s ease;
-                }
-
-                .divider {
-                    width: 50px;
-                    height: 3px;
-                    background: #006A4E;
-                    margin-bottom: 20px;
-                    border-radius: 2px;
-                    transition: all 0.3s ease;
-                }
-
-                .beyond-limits__box:hover .divider {
-                    width: 70px;
-                }
-
-                .beyond-limits__box p {
-                    color: #666666;
-                    font-size: 16px;
-                    line-height: 1.7;
-                    margin: 0;
-                    position: relative;
-                    z-index: 2;
-                    transition: all 0.3s ease;
-                }
-
-                .hover-overlay {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                .web-solutions__content-img img {
                     width: 100%;
-                    height: 100%;
-                    background: linear-gradient(45deg, rgba(0, 106, 78, 0.03), rgba(0, 106, 78, 0.08));
-                    opacity: 0;
-                    transition: all 0.3s ease;
-                    z-index: 1;
+                    border-radius: 15px;
+                    transition: transform 0.3s ease;
                 }
 
-                .beyond-limits__box:hover .hover-overlay {
-                    opacity: 1;
+                .experience-years {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    background: rgba(255,255,255,0.9);
+                    padding: 15px;
+                    border-radius: 10px;
+                    text-align: center;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+
+                .experience-years .number {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #006A4E;
+                }
+
+                .content-title {
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                    color: #1c1c1c;
+                }
+
+                .web-solutions__content-desc {
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: #666;
+                    margin-bottom: 25px;
+                }
+
+                .web-solutions__content-desc.highlight {
+                    font-size: 20px;
+                    color: #006A4E;
+                }
+
+                .features-list {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                .features-list li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    color: #444;
+                }
+
+                .features-list li i {
+                    color: #006A4E;
                 }
 
                 @media (max-width: 991px) {
-                    .beyond-limits {
+                    .web-solutions {
                         padding: 80px 0;
                     }
 
                     .section-title__title {
-                        font-size: 32px;
+                        font-size: 36px;
+                    }
+
+                    .tab-buttons {
+                        gap: 15px;
+                        margin-bottom: 30px;
+                        padding: 0 15px;
+                    }
+
+                    .tab-btn {
+                        padding: 12px 25px;
+                        font-size: 15px;
+                    }
+
+                    .tab-btn i {
+                        font-size: 18px;
                     }
                 }
 
                 @media (max-width: 767px) {
-                    .beyond-limits {
-                        padding: 60px 0;
+                    .tab-buttons {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 12px;
+                        margin-bottom: 25px;
                     }
 
-                    .beyond-limits__box {
-                        padding: 30px;
-                        margin-bottom: 30px;
+                    .tab-btn {
+                        width: 100%;
+                        max-width: 280px;
+                        justify-content: center;
+                        padding: 12px 20px;
+                        font-size: 14px;
                     }
 
-                    .beyond-limits__box h3 {
-                        font-size: 20px;
-                    }
-
-                    .beyond-limits__box p {
-                        font-size: 15px;
-                    }
-
-                    .box-icon {
-                        width: 60px;
-                        height: 60px;
-                    }
-
-                    .box-icon i {
-                        font-size: 24px;
-                    }
-                }
-
-                @media (max-width: 575px) {
-                    .section-title__title {
-                        font-size: 28px;
-                    }
-                }
-
-                /* New Vision Content Styles */
-                .vision-content {
-                    position: relative;
-                    max-width: 1000px;
-                    margin: 80px auto;
-                    padding: 60px 40px;
-                    background: rgba(255, 255, 255, 0.95);
-                    border-radius: 30px;
-                    box-shadow: 0 20px 40px rgba(0, 106, 78, 0.08);
-                    overflow: hidden;
-                }
-
-                .vision-shapes {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    overflow: hidden;
-                    z-index: 0;
-                }
-
-                .shape-1 {
-                    position: absolute;
-                    top: -30px;
-                    left: -30px;
-                    width: 160px;
-                    height: 160px;
-                    background: rgba(0, 106, 78, 0.05);
-                    border-radius: 50%;
-                    animation: float 8s ease-in-out infinite;
-                }
-
-                .shape-2 {
-                    position: absolute;
-                    bottom: -40px;
-                    right: -40px;
-                    width: 200px;
-                    height: 200px;
-                    background: rgba(0, 106, 78, 0.03);
-                    border-radius: 50%;
-                    animation: float 10s ease-in-out infinite;
-                }
-
-                .shape-3 {
-                    position: absolute;
-                    top: 50%;
-                    right: 50px;
-                    width: 70px;
-                    height: 70px;
-                    background: rgba(0, 106, 78, 0.04);
-                    border-radius: 12px;
-                    transform: rotate(45deg);
-                    animation: rotate 15s linear infinite;
-                }
-
-                .shape-4 {
-                    position: absolute;
-                    bottom: 70px;
-                    left: 30px;
-                    width: 90px;
-                    height: 90px;
-                    border: 15px solid rgba(0, 106, 78, 0.03);
-                    border-radius: 50%;
-                    animation: pulse 4s ease-in-out infinite;
-                }
-
-                .vision-content__inner {
-                    position: relative;
-                    z-index: 1;
-                }
-
-                .vision-lead {
-                    font-size: 24px;
-                    line-height: 1.6;
-                    color: #1c1c1c;
-                    font-weight: 500;
-                    margin-bottom: 30px;
-                    position: relative;
-                }
-
-                .vision-text {
-                    font-size: 18px;
-                    line-height: 1.8;
-                    color: #555555;
-                    margin-bottom: 35px;
-                }
-
-                .vision-highlight {
-                    font-size: 28px;
-                    font-weight: 600;
-                    color: #006A4E;
-                    margin: 0;
-                    position: relative;
-                    display: inline-block;
-                    padding: 10px 30px;
-                    background: rgba(0, 106, 78, 0.05);
-                    border-radius: 30px;
-                }
-
-                @keyframes float {
-                    0%, 100% { transform: translateY(0); }
-                    50% { transform: translateY(-20px); }
-                }
-
-                @keyframes rotate {
-                    from { transform: rotate(0deg); }
-                    to { transform: rotate(360deg); }
-                }
-
-                @keyframes pulse {
-                    0%, 100% { transform: scale(1); opacity: 0.5; }
-                    50% { transform: scale(1.1); opacity: 0.8; }
-                }
-
-                @media (max-width: 991px) {
-                    .vision-content {
-                        margin: 60px auto;
-                        padding: 50px 30px;
-                    }
-
-                    .vision-lead {
-                        font-size: 22px;
-                    }
-
-                    .vision-text {
+                    .tab-btn i {
                         font-size: 16px;
                     }
+                }
 
-                    .vision-highlight {
-                        font-size: 24px;
+                @media (max-width: 480px) {
+                    .tab-buttons {
+                        gap: 10px;
+                        margin-bottom: 20px;
+                    }
+
+                    .tab-btn {
+                        max-width: 240px;
+                        padding: 10px 15px;
+                        font-size: 13px;
                     }
                 }
 
-                @media (max-width: 767px) {
-                    .vision-content {
-                        margin: 40px auto;
-                        padding: 40px 25px;
-                    }
+                /* Tab Content Visibility Control */
+                .tabs-content {
+                    position: relative;
+                }
 
-                    .vision-lead {
-                        font-size: 20px;
-                    }
+                .tab {
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
 
-                    .vision-text {
-                        font-size: 15px;
-                    }
+                .tab.active-tab {
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    position: relative;
+                    animation: fadeIn 0.5s ease-in-out;
+                }
 
-                    .vision-highlight {
-                        font-size: 22px;
-                        padding: 8px 20px;
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(10px);
                     }
-
-                    .shape-1, .shape-2 {
-                        width: 120px;
-                        height: 120px;
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
                     }
                 }
             </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const tabButtons = document.querySelectorAll('.tab-btn');
+                    
+                    tabButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            // Remove active class from all buttons and tabs
+                            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active-btn'));
+                            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active-tab'));
+                            
+                            // Add active class to clicked button
+                            this.classList.add('active-btn');
+                            
+                            // Show corresponding tab
+                            const tabId = this.getAttribute('data-tab');
+                            document.querySelector(tabId).classList.add('active-tab');
+                        });
+                    });
+                });
+            </script>
         </section>
-        <!--Beyond Limits Section End-->
 
-       
-
+        
 
         <!-- Features Section -->
         <section class="features-section">
