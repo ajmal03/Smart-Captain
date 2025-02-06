@@ -140,25 +140,43 @@
                             <span class="number">2025</span>
                             <span class="text">Olympic Esports Games</span>
                         </div>
+                        <!-- Duplicate items for smooth infinite scroll -->
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text">FIFA World Cup</span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text">Asian Games</span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2025</span>
+                            <span class="text">Olympic Esports Games</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <style>
                 .ticker-section {
                     background-color: #f8f9fa;
-                    padding: 40px 0;
+                    padding: 30px 0;
                     overflow: hidden;
+                    position: relative;
                 }
 
                 .ticker-wrapper {
                     width: 100%;
+                    overflow: hidden;
                 }
 
                 .ticker-content {
                     display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    animation: ticker 20s linear infinite;
+                    animation: ticker 30s linear infinite;
+                    width: fit-content;
+                }
+
+                .ticker-content:hover {
+                    animation-play-state: paused;
                 }
 
                 .ticker-item {
@@ -166,6 +184,12 @@
                     flex-direction: column;
                     align-items: center;
                     padding: 0 40px;
+                    min-width: 200px;
+                    transition: transform 0.3s ease;
+                }
+
+                .ticker-item:hover {
+                    transform: scale(1.05);
                 }
 
                 .ticker-item .number {
@@ -179,6 +203,8 @@
                     font-size: 18px;
                     color: #333;
                     font-weight: 500;
+                    text-align: center;
+                    white-space: nowrap;
                 }
 
                 @keyframes ticker {
@@ -186,17 +212,58 @@
                         transform: translateX(0);
                     }
                     100% {
-                        transform: translateX(-100%);
+                        transform: translateX(-50%);
                     }
                 }
 
+                /* Large screens */
+                @media (min-width: 1200px) {
+                    .ticker-item {
+                        padding: 0 60px;
+                    }
+                }
+
+                /* Medium screens */
+                @media (max-width: 991px) {
+                    .ticker-item {
+                        padding: 0 30px;
+                    }
+                    .ticker-item .number {
+                        font-size: 42px;
+                    }
+                    .ticker-item .text {
+                        font-size: 16px;
+                    }
+                }
+
+                /* Small screens */
                 @media (max-width: 768px) {
+                    .ticker-section {
+                        padding: 20px 0;
+                    }
+                    .ticker-item {
+                        padding: 0 20px;
+                        min-width: 160px;
+                    }
                     .ticker-item .number {
                         font-size: 36px;
                     }
-
                     .ticker-item .text {
-                        font-size: 16px;
+                        font-size: 14px;
+                    }
+                }
+
+                /* Extra small screens */
+                @media (max-width: 480px) {
+                    .ticker-item {
+                        padding: 0 15px;
+                        min-width: 140px;
+                    }
+                    .ticker-item .number {
+                        font-size: 32px;
+                    }
+                    .ticker-item .text {
+                        font-size: 13px;
                     }
                 }
             </style>
