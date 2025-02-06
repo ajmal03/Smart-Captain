@@ -124,7 +124,83 @@
                 </div>
             </div>
         </section>
-        
+        <section class="ticker-section">
+            <div class="container">
+                <div class="ticker-wrapper">
+                    <div class="ticker-content">
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text">FIFA World Cup</span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text">Asian Games</span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2025</span>
+                            <span class="text">Olympic Esports Games</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .ticker-section {
+                    background-color: #f8f9fa;
+                    padding: 40px 0;
+                    overflow: hidden;
+                }
+
+                .ticker-wrapper {
+                    width: 100%;
+                }
+
+                .ticker-content {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    animation: ticker 20s linear infinite;
+                }
+
+                .ticker-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 40px;
+                }
+
+                .ticker-item .number {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: #006A4E;
+                    margin-bottom: 10px;
+                }
+
+                .ticker-item .text {
+                    font-size: 18px;
+                    color: #333;
+                    font-weight: 500;
+                }
+
+                @keyframes ticker {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .ticker-item .number {
+                        font-size: 36px;
+                    }
+
+                    .ticker-item .text {
+                        font-size: 16px;
+                    }
+                }
+            </style>
+        </section>
 
         <section class="about-section">
             <div class="container">
