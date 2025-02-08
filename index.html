@@ -399,7 +399,230 @@
         <!--Banner One End-->
 
        
+        <section class="ticker-section">
+            <div class="container">
+                <div class="ticker-wrapper">
+                    <div class="ticker-content">
+                       
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games-2.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2029</span>
+                            <span class="text">Asian Winter Games</span>
+                        </div>
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games-4.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text"> Asian Games</span>
+                        </div>
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games5.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text" style=" font-weight: bold;">Saudi Arabia to host <br> the 2034 FIFA World Cup</span>
+                        </div>
 
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games-2.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2029</span>
+                            <span class="text">Asian Winter Games</span>
+                        </div>
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games-4.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text"> Asian Games</span>
+                        </div>
+                        <div class="ticker-item logo-item">
+                            <span class="number">
+                                <img src="assets/images/resources/games5.png" alt="Smart Captain Logo" class="logo-image">
+                            </span>
+                        </div>
+                        <div class="ticker-item">
+                            <span class="number">2034</span>
+                            <span class="text" style=" font-weight: bold;">Saudi Arabia to host <br> the 2034 FIFA World Cup</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .ticker-section {
+                    background-color: #ffffff;
+                    padding: 10px 0; /* Reduced from 20px */
+                    overflow: hidden;
+                    position: relative;
+                    box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+                }
+
+                .ticker-wrapper {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                .ticker-content {
+                    display: flex;
+                    animation: ticker 40s linear infinite;
+                    width: fit-content;
+                    align-items: center;
+                }
+
+                .ticker-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px 25px; /* Reduced from 10px */
+                    min-width: 160px;
+                }
+
+                .ticker-item .number {
+                    font-size: 32px; /* Reduced from 42px */
+                    font-weight: 700;
+                    color: #006A4E;
+                    margin-bottom: 4px; /* Reduced from 8px */
+                    line-height: 1.2;
+                }
+
+                .ticker-item .text {
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    text-align: center;
+                    white-space: nowrap;
+                    line-height: 1.2;
+                }
+
+                .ticker-item.logo-item {
+                    min-width: 100px;
+                }
+
+                .logo-image {
+                    max-width: 60px; /* Reduced from 80px */
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                .ticker-item:hover {
+                    transform: scale(1.05);
+                    background: rgba(255, 255, 255, 0.8);
+                    border-radius: 10px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+
+                .logo-item:hover .logo-image {
+                    transform: scale(1.1);
+                    filter: grayscale(0);
+                }
+
+                @keyframes ticker {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                /* Medium screens */
+                @media (max-width: 991px) {
+                    .ticker-item {
+                        padding: 4px 20px;
+                        min-width: 140px;
+                    }
+                    .ticker-item .number {
+                        font-size: 28px;
+                    }
+                    .ticker-item .text {
+                        font-size: 14px;
+                    }
+                    .logo-image {
+                        max-width: 50px;
+                    }
+                }
+
+                /* Small screens */
+                @media (max-width: 768px) {
+                    .ticker-item {
+                        padding: 3px 15px;
+                        min-width: 120px;
+                    }
+                    .ticker-item .number {
+                        font-size: 24px;
+                        margin-bottom: 3px;
+                    }
+                    .ticker-item .text {
+                        font-size: 13px;
+                    }
+                    .logo-image {
+                        max-width: 45px;
+                    }
+                }
+
+                /* Extra small screens */
+                @media (max-width: 480px) {
+                    .ticker-item {
+                        padding: 2px 12px;
+                        min-width: 100px;
+                    }
+                    .ticker-item .number {
+                        font-size: 20px;
+                        margin-bottom: 2px;
+                    }
+                    .ticker-item .text {
+                        font-size: 12px;
+                    }
+                    .logo-image {
+                        max-width: 40px;
+                    }
+                    .ticker-item.logo-item {
+                        min-width: 80px;
+                    }
+                }
+
+                .logo-image.games-6 {
+                    max-width: 180px !important;
+                }
+
+                @media (max-width: 991px) {
+                    .logo-image.games-6 {
+                        max-width: 150px !important;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .logo-image.games-6 {
+                        max-width: 130px !important;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .logo-image.games-6 {
+                        max-width: 110px !important;
+                    }
+                }
+            </style>
+        </section>
 
 
 
@@ -416,7 +639,7 @@
                                     <div class="welcome-one__shape-2"></div>
                                 </div>
                                 <div class="welcome-one__trusted" style="text-align: center;">
-                                    <p>Globally<br> Recognized</p>
+                                    <p>Globally<br> Recognised</p>
 <!--                                     <h2 class="odometer odometer-auto-theme" data-count=Recognized></h2> -->
                                 </div>
                             </div>
